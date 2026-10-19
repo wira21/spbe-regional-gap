@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPBE Regional Gap</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.35.2/plotly-basic.min.js"></script>
+<style>
+:root{
+  color-scheme:light;
+  --bg:#f4f4f2; --surface-1:#fcfcfb; --border:#e2e1dc;
+  --text-primary:#0b0b0b; --text-secondary:#52514e; --text-muted:#7a7974;
+  --grid:#ebeae6; --java:#2a78d6; --outside:#eb6834; --other:#c9c8c2;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#111110; --surface-1:#1a1a19; --border:#2e2e2c;
+    --text-primary:#f0efec; --text-secondary:#c3c2b7; --text-muted:#8f8e86;
+    --grid:#2a2a28; --java:#3987e5; --outside:#d95926; --other:#4a4a46;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#111110; --surface-1:#1a1a19; --border:#2e2e2c;
+  --text-primary:#f0efec; --text-secondary:#c3c2b7; --text-muted:#8f8e86;
+  --grid:#2a2a28; --java:#3987e5; --outside:#d95926; --other:#4a4a46;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text-primary);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 16px 48px}
+h1{font-size:26px;line-height:1.25;margin:0 0 6px;font-weight:650}
+.sub{color:var(--text-secondary);margin:0 0 22px;max-width:780px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:18px}
+.tile{background:var(--surface-1);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+.tile .k{color:var(--text-secondary);font-size:13px}
+.tile .v{font-size:26px;font-weight:650;margin-top:2px;font-variant-numeric:tabular-nums}
+.tile .n{color:var(--text-muted);font-size:12.5px}
+.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:var(--surface-1);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:18px;position:sticky;top:0;z-index:5}
+.filters label{font-size:13px;color:var(--text-secondary);display:flex;gap:6px;align-items:center}
+select,input{font:inherit;font-size:14px;color:var(--text-primary);background:var(--bg);border:1px solid var(--border);border-radius:7px;padding:6px 8px;max-width:220px}
+button{font:inherit;font-size:13px;color:var(--text-primary);background:transparent;border:1px solid var(--border);border-radius:7px;padding:6px 10px;cursor:pointer}
+button:hover{background:var(--bg)}
+.count{margin-left:auto;font-size:13px;color:var(--text-muted)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{background:var(--surface-1);border:1px solid var(--border);border-radius:10px;padding:14px 14px 6px;min-width:0}
+.card.wide{grid-column:1/-1}
+.card h2{font-size:15.5px;margin:0;font-weight:620}
+.card p{margin:2px 0 4px;color:var(--text-secondary);font-size:13px}
+.legend{display:flex;gap:16px;font-size:13px;color:var(--text-secondary);margin:4px 0}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.plot{width:100%;height:340px}
+.plot.tall{height:430px}
+table{width:100%;border-collapse:collapse;font-size:13.5px;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--border)}
+th{color:var(--text-secondary);font-weight:600;cursor:pointer;user-select:none;white-space:nowrap}
+td.num,th.num{text-align:right}
+.tablebox{max-height:420px;overflow:auto;margin:6px 0 10px}
+.notes{color:var(--text-secondary);font-size:13px;margin-top:22px;max-width:860px}
+.notes a{color:var(--java)}
+@media (max-width:760px){.grid{grid-template-columns:1fr}.filters{position:static}.count{margin-left:0}h1{font-size:22px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Is Indonesia's digital government gap closing?</h1>
+  <p class="sub">SPBE (digital government) index of 373 regencies and cities scored in both 2021 and 2024. Hover any mark for details, use the filters, or click a province bar to focus on it.</p>
+
+  <div class="tiles" id="tiles"></div>
+
+  <div class="filters">
+    <label>Region <select id="fGroup"><option value="all">All</option><option value="1">Java</option><option value="0">Outside Java</option></select></label>
+    <label>Province <select id="fProv"><option value="all">All provinces</option></select></label>
+    <label>Type <select id="fType"><option value="all">All</option><option>Kabupaten</option><option>Kota</option></select></label>
+    <label>Search <input id="fName" type="search" placeholder="e.g. Banyuwangi"></label>
+    <button id="reset">Reset</button>
+    <span class="count" id="count"></span>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Both groups improved, but the Java gap grew</h2>
+      <p>Mean SPBE index of the selected regions, 2021 vs 2024</p>
+      <div class="legend"><span><i style="background:var(--java)"></i>Java</span><span><i style="background:var(--outside)"></i>Outside Java</span></div>
+      <div id="pSlope" class="plot"></div>
+    </div>
+    <div class="card">
+      <h2>Low starters gained the most</h2>
+      <p>Each dot is one region: 2021 score vs change to 2024</p>
+      <div class="legend"><span><i style="background:var(--java)"></i>Java</span><span><i style="background:var(--outside)"></i>Outside Java</span></div>
+      <div id="pCatch" class="plot"></div>
+    </div>
+    <div class="card wide">
+      <h2>Average SPBE 2024 by province</h2>
+      <p>Click a bar to filter to that province. Click it again to clear.</p>
+      <div id="pProv" class="plot tall"></div>
+    </div>
+    <div class="card">
+      <h2>Human development and digital government</h2>
+      <p>HDI 2024 vs SPBE 2024</p>
+      <div id="pHdi" class="plot"></div>
+    </div>
+    <div class="card">
+      <h2>Distribution of scores</h2>
+      <p>Number of regions by SPBE index, 2021 vs 2024</p>
+      <div class="legend"><span><i style="background:var(--other)"></i>2021</span><span><i style="background:var(--java)"></i>2024</span></div>
+      <div id="pDist" class="plot"></div>
+    </div>
+    <div class="card wide">
+      <h2>All selected regions</h2>
+      <p>Click a column header to sort.</p>
+      <div class="tablebox"><table id="tbl"></table></div>
+    </div>
+  </div>
+
+  <div class="notes">
+    <p><b>Sources:</b> SPBE scores from KepmenPANRB 1503/2021 and 663/2024; HDI and poverty from BPS. Regions with a 2021 score of exactly 1.00 are excluded. The regression result (Java regions improved 0.42 points more than similar regions elsewhere, after controlling for starting score, HDI, poverty, size, city status and internet use) is in <a href="https://github.com/wira21/spbe-regional-gap">the repository</a>.</p>
+    <p><b>Limits:</b> the SPBE scoring guide changed in 2023 and 2024, so part of the rise may reflect new rules; 102 regencies and cities have no 2021 score (none in Java); these are associations, not causes.</p>
+    <p>Wira Fattah Pasha, October 2026. Personal research project; views are my own.</p>
+  </div>
+</div>
+
+<script>
+const RAW = [["Kab. Aceh Barat","Aceh","Kabupaten",0,2.1,2.69,0.59,73.69,17.6],["Kab. Aceh Singkil","Aceh","Kabupaten",0,1.95,2.28,0.33,70.75,19.06],["Kab. Aceh Tamiang","Aceh","Kabupaten",0,2.62,2.86,0.24,72.32,12.17],["Kab. Aceh Timur","Aceh","Kabupaten",0,2.25,2.38,0.13,69.87,13.26],["Kab. Bener Meriah","Aceh","Kabupaten",0,2.2,2.66,0.46,75.01,18.18],["Kab. Bireuen","Aceh","Kabupaten",0,2.06,2.32,0.26,74.45,12.1],["Kab. Nagan Raya","Aceh","Kabupaten",0,1.76,2.94,1.18,71.72,16.94],["Kota Banda Aceh","Aceh","Kota",0,2.62,3.7,1.08,87.17,6.95],["Kota Langsa","Aceh","Kota",0,1.98,1.95,-0.03,78.81,10.33],["Kota Lhokseumawe","Aceh","Kota",0,1.54,2.8,1.26,79.55,10.44],["Kota Sabang","Aceh","Kota",0,1.53,3.02,1.49,78.32,14.58],["Kab. Badung","Bali","Kabupaten",0,1.78,3.87,2.09,83.87,2.23],["Kab. Bangli","Bali","Kabupaten",0,2.28,2.71,0.43,71.34,5.06],["Kab. Buleleng","Bali","Kabupaten",0,2.3,3.69,1.39,74.52,5.39],["Kab. Gianyar","Bali","Kabupaten",0,2.73,3.49,0.76,79.82,4.0],["Kab. Jembrana","Bali","Kabupaten",0,2.83,3.77,0.94,74.6,4.51],["Kab. Karangasem","Bali","Kabupaten",0,2.43,2.57,0.14,69.74,6.52],["Kab. Klungkung","Bali","Kabupaten",0,3.01,3.14,0.13,74.04,5.3],["Kab. Tabanan","Bali","Kabupaten",0,2.07,3.54,1.47,78.42,4.4],["Kota Denpasar","Bali","Kota",0,3.19,3.96,0.77,85.22,2.59],["Kab. Lebak","Banten","Kabupaten",1,2.86,3.52,0.66,65.86,8.44],["Kab. Pandeglang","Banten","Kabupaten",1,1.95,3.45,1.5,66.99,9.18],["Kab. Serang","Banten","Kabupaten",1,2.64,3.73,1.09,69.03,4.51],["Kab. Tangerang","Banten","Kabupaten",1,2.99,3.91,0.92,74.09,6.55],["Kota Cilegon","Banten","Kota",1,2.03,2.56,0.53,75.14,3.75],["Kota Serang","Banten","Kota",1,2.97,2.61,-0.36,73.99,5.65],["Kota Tangerang","Banten","Kota",1,3.4,3.85,0.45,80.02,5.43],["Kota Tangerang Selatan","Banten","Kota",1,2.48,3.48,1.0,82.89,2.36],["Kab. Bengkulu Selatan","Bengkulu","Kabupaten",0,1.96,2.87,0.91,72.35,17.1],["Kab. Bengkulu Tengah","Bengkulu","Kabupaten",0,1.29,2.84,1.55,69.84,10.14],["Kab. Bengkulu Utara","Bengkulu","Kabupaten",0,1.44,3.28,1.84,71.11,10.96],["Kab. Kepahiang","Bengkulu","Kabupaten",0,1.94,2.47,0.53,70.27,12.9],["Kab. Lebong","Bengkulu","Kabupaten",0,1.55,3.38,1.83,69.27,10.45],["Kab. Mukomuko","Bengkulu","Kabupaten",0,1.74,2.07,0.33,70.63,10.76],["Kab. Rejang Lebong","Bengkulu","Kabupaten",0,1.84,3.24,1.4,72.92,14.65],["Kab. Seluma","Bengkulu","Kabupaten",0,1.41,2.26,0.85,68.97,17.23],["Kota Bengkulu","Bengkulu","Kota",0,1.68,2.63,0.95,82.04,13.76],["Kab. Bantul","D.I. Yogyakarta","Kabupaten",1,3.62,4.18,0.56,81.74,11.66],["Kab. Gunungkidul","D.I. Yogyakarta","Kabupaten",1,2.49,3.96,1.47,71.89,15.18],["Kab. Kulon Progo","D.I. Yogyakarta","Kabupaten",1,3.22,3.91,0.69,76.14,15.62],["Kab. Sleman","D.I. Yogyakarta","Kabupaten",1,2.55,4.3,1.75,85.61,7.46],["Kota Yogyakarta","D.I. Yogyakarta","Kota",1,2.98,3.5,0.52,88.77,6.26],["Kab. Bone Bolango","Gorontalo","Kabupaten",0,2.02,3.0,0.98,72.38,14.8],["Kab. Gorontalo","Gorontalo","Kabupaten",0,1.31,2.68,1.37,69.66,16.43],["Kota Gorontalo","Gorontalo","Kota",0,1.9,2.82,0.92,79.18,5.74],["Kab. Batang Hari","Jambi","Kabupaten",0,2.03,3.55,1.52,71.67,8.63],["Kab. Bungo","Jambi","Kabupaten",0,1.46,2.71,1.25,71.92,5.06],["Kab. Kerinci","Jambi","Kabupaten",0,1.56,2.18,0.62,73.11,6.93],["Kab. Muaro Jambi","Jambi","Kabupaten",0,2.18,2.62,0.44,71.91,3.65],["Kab. Sarolangun","Jambi","Kabupaten",0,2.27,3.1,0.83,72.01,8.36],["Kab. Tanjung Jabung Barat","Jambi","Kabupaten",0,1.1,2.92,1.82,69.93,9.54],["Kab. Tanjung Jabung Timur","Jambi","Kabupaten",0,1.16,2.83,1.67,67.54,10.14],["Kab. Tebo","Jambi","Kabupaten",0,1.97,2.62,0.65,71.32,6.12],["Kota Jambi","Jambi","Kota",0,1.69,4.32,2.63,81.04,7.73],["Kota Sungai Penuh","Jambi","Kota",0,1.44,3.14,1.7,77.4,2.92],["Kab. Bandung","Jawa Barat","Kabupaten",1,2.98,3.98,1.0,74.27,6.19],["Kab. Bandung Barat","Jawa Barat","Kabupaten",1,2.85,3.78,0.93,70.03,10.49],["Kab. Bekasi","Jawa Barat","Kabupaten",1,1.6,4.08,2.48,76.44,4.8],["Kab. Bogor","Jawa Barat","Kabupaten",1,2.72,4.1,1.38,72.39,7.05],["Kab. Ciamis","Jawa Barat","Kabupaten",1,3.32,3.65,0.33,72.56,7.39],["Kab. Cianjur","Jawa Barat","Kabupaten",1,2.46,3.75,1.29,67.24,10.14],["Kab. Cirebon","Jawa Barat","Kabupaten",1,1.91,3.61,1.7,71.44,11.0],["Kab. Garut","Jawa Barat","Kabupaten",1,3.25,3.89,0.64,68.79,9.68],["Kab. Indramayu","Jawa Barat","Kabupaten",1,2.57,3.93,1.36,69.83,11.93],["Kab. Karawang","Jawa Barat","Kabupaten",1,3.39,4.4,1.01,72.9,7.86],["Kab. Kuningan","Jawa Barat","Kabupaten",1,2.24,3.57,1.33,71.26,11.88],["Kab. Majalengka","Jawa Barat","Kabupaten",1,2.82,2.94,0.12,69.74,10.82],["Kab. Pangandaran","Jawa Barat","Kabupaten",1,2.38,3.56,1.18,69.85,8.75],["Kab. Purwakarta","Jawa Barat","Kabupaten",1,2.37,3.94,1.57,72.65,8.41],["Kab. Subang","Jawa Barat","Kabupaten",1,2.44,3.38,0.94,71.36,9.49],["Kab. Sukabumi","Jawa Barat","Kabupaten",1,1.56,3.95,2.39,68.97,6.87],["Kab. Sumedang","Jawa Barat","Kabupaten",1,3.52,4.51,0.99,73.73,9.1],["Kab. Tasikmalaya","Jawa Barat","Kabupaten",1,2.05,3.76,1.71,68.36,10.23],["Kota Bandung","Jawa Barat","Kota",1,3.19,4.59,1.4,83.52,3.87],["Kota Banjar","Jawa Barat","Kota",1,2.72,3.58,0.86,73.64,5.85],["Kota Bekasi","Jawa Barat","Kota",1,2.94,3.83,0.89,83.54,4.01],["Kota Bogor","Jawa Barat","Kota",1,3.11,4.08,0.97,78.52,6.53],["Kota Cimahi","Jawa Barat","Kota",1,2.75,4.15,1.4,80.08,4.39],["Kota Cirebon","Jawa Barat","Kota",1,2.83,4.13,1.3,77.08,9.02],["Kota Depok","Jawa Barat","Kota",1,2.99,4.32,1.33,82.91,2.34],["Kota Sukabumi","Jawa Barat","Kota",1,2.98,3.79,0.81,76.85,7.2],["Kota Tasikmalaya","Jawa Barat","Kota",1,2.68,3.96,1.28,75.04,11.1],["Kab. Banjarnegara","Jawa Tengah","Kabupaten",1,2.42,3.72,1.3,69.6,14.71],["Kab. Banyumas","Jawa Tengah","Kabupaten",1,2.73,4.09,1.36,74.52,11.95],["Kab. Batang","Jawa Tengah","Kabupaten",1,3.24,3.55,0.31,70.74,8.73],["Kab. Blora","Jawa Tengah","Kabupaten",1,2.8,3.28,0.48,71.39,11.42],["Kab. Boyolali","Jawa Tengah","Kabupaten",1,2.82,3.89,1.07,75.96,9.63],["Kab. Brebes","Jawa Tengah","Kabupaten",1,2.34,2.84,0.5,68.46,15.6],["Kab. Cilacap","Jawa Tengah","Kabupaten",1,2.81,3.27,0.46,72.38,10.68],["Kab. Demak","Jawa Tengah","Kabupaten",1,3.19,3.93,0.74,74.57,11.89],["Kab. Grobogan","Jawa Tengah","Kabupaten",1,2.51,3.57,1.06,72.02,11.43],["Kab. Jepara","Jawa Tengah","Kabupaten",1,3.04,3.51,0.47,74.32,6.09],["Kab. Karanganyar","Jawa Tengah","Kabupaten",1,2.4,3.9,1.5,78.11,9.59],["Kab. Kebumen","Jawa Tengah","Kabupaten",1,3.05,4.07,1.02,71.93,15.71],["Kab. Kendal","Jawa Tengah","Kabupaten",1,3.27,3.66,0.39,74.34,9.35],["Kab. Klaten","Jawa Tengah","Kabupaten",1,2.74,4.07,1.33,78.16,12.04],["Kab. Kudus","Jawa Tengah","Kabupaten",1,2.53,4.23,1.7,77.22,7.23],["Kab. Magelang","Jawa Tengah","Kabupaten",1,2.67,3.92,1.25,71.99,10.83],["Kab. Pati","Jawa Tengah","Kabupaten",1,2.75,3.75,1.0,74.1,9.17],["Kab. Pekalongan","Jawa Tengah","Kabupaten",1,2.63,3.05,0.42,71.84,8.95],["Kab. Pemalang","Jawa Tengah","Kabupaten",1,2.49,3.04,0.55,68.55,14.92],["Kab. Purbalingga","Jawa Tengah","Kabupaten",1,2.23,3.93,1.7,70.69,14.18],["Kab. Purworejo","Jawa Tengah","Kabupaten",1,2.34,3.49,1.15,75.11,10.87],["Kab. Rembang","Jawa Tengah","Kabupaten",1,2.76,3.99,1.23,72.53,14.02],["Kab. Semarang","Jawa Tengah","Kabupaten",1,2.36,3.31,0.95,75.67,6.96],["Kab. Sragen","Jawa Tengah","Kabupaten",1,3.03,4.34,1.31,75.53,12.41],["Kab. Sukoharjo","Jawa Tengah","Kabupaten",1,2.93,4.45,1.52,79.3,7.47],["Kab. Tegal","Jawa Tengah","Kabupaten",1,2.55,3.16,0.61,70.77,6.81],["Kab. Temanggung","Jawa Tengah","Kabupaten",1,2.78,3.64,0.86,71.87,8.67],["Kab. Wonogiri","Jawa Tengah","Kabupaten",1,2.8,4.2,1.4,72.55,10.71],["Kab. Wonosobo","Jawa Tengah","Kabupaten",1,2.32,3.79,1.47,69.82,15.28],["Kota Magelang","Jawa Tengah","Kota",1,2.71,3.69,0.98,82.15,5.94],["Kota Pekalongan","Jawa Tengah","Kota",1,2.82,3.76,0.94,77.22,6.71],["Kota Salatiga","Jawa Tengah","Kota",1,2.34,3.64,1.3,85.72,4.57],["Kota Semarang","Jawa Tengah","Kota",1,2.98,3.95,0.97,85.25,4.03],["Kota Surakarta","Jawa Tengah","Kota",1,2.75,4.3,1.55,84.4,8.31],["Kota Tegal","Jawa Tengah","Kota",1,2.39,3.95,1.56,77.43,7.64],["Kab. Bangkalan","Jawa Timur","Kabupaten",1,1.62,2.92,1.3,66.27,18.66],["Kab. Banyuwangi","Jawa Timur","Kabupaten",1,3.53,4.77,1.24,73.11,6.54],["Kab. Blitar","Jawa Timur","Kabupaten",1,2.76,3.77,1.01,73.09,8.16],["Kab. Bojonegoro","Jawa Timur","Kabupaten",1,2.45,4.14,1.69,71.78,11.69],["Kab. Bondowoso","Jawa Timur","Kabupaten",1,2.25,3.86,1.61,68.65,12.6],["Kab. Gresik","Jawa Timur","Kabupaten",1,3.31,4.32,1.01,78.45,10.32],["Kab. Jember","Jawa Timur","Kabupaten",1,1.96,3.54,1.58,69.15,9.01],["Kab. Jombang","Jawa Timur","Kabupaten",1,2.51,3.91,1.4,75.1,8.6],["Kab. Kediri","Jawa Timur","Kabupaten",1,3.12,4.63,1.51,74.44,9.95],["Kab. Lamongan","Jawa Timur","Kabupaten",1,3.32,4.18,0.86,75.13,12.16],["Kab. Lumajang","Jawa Timur","Kabupaten",1,2.56,3.39,0.83,68.8,8.65],["Kab. Madiun","Jawa Timur","Kabupaten",1,3.21,4.31,1.1,73.74,10.63],["Kab. Magetan","Jawa Timur","Kabupaten",1,2.56,2.92,0.36,75.87,9.32],["Kab. Malang","Jawa Timur","Kabupaten",1,2.25,3.74,1.49,72.68,8.98],["Kab. Mojokerto","Jawa Timur","Kabupaten",1,2.71,4.16,1.45,75.98,9.37],["Kab. Nganjuk","Jawa Timur","Kabupaten",1,2.14,3.84,1.7,74.23,10.17],["Kab. Ngawi","Jawa Timur","Kabupaten",1,2.65,3.61,0.96,73.09,13.81],["Kab. Pacitan","Jawa Timur","Kabupaten",1,1.41,3.5,2.09,70.74,13.08],["Kab. Pamekasan","Jawa Timur","Kabupaten",1,2.12,3.92,1.8,68.49,13.41],["Kab. Pasuruan","Jawa Timur","Kabupaten",1,2.39,3.88,1.49,70.73,8.63],["Kab. Ponorogo","Jawa Timur","Kabupaten",1,2.59,3.07,0.48,73.01,9.11],["Kab. Probolinggo","Jawa Timur","Kabupaten",1,2.59,3.97,1.38,68.29,16.45],["Kab. Sampang","Jawa Timur","Kabupaten",1,2.98,3.67,0.69,64.65,20.83],["Kab. Sidoarjo","Jawa Timur","Kabupaten",1,2.37,3.96,1.59,82.31,4.53],["Kab. Situbondo","Jawa Timur","Kabupaten",1,2.43,4.21,1.78,69.75,11.51],["Kab. Sumenep","Jawa Timur","Kabupaten",1,2.38,3.73,1.35,69.26,17.78],["Kab. Trenggalek","Jawa Timur","Kabupaten",1,2.58,4.22,1.64,72.24,10.5],["Kab. Tuban","Jawa Timur","Kabupaten",1,2.35,4.24,1.89,71.23,14.36],["Kab. Tulungagung","Jawa Timur","Kabupaten",1,2.39,3.78,1.39,75.09,6.28],["Kota Batu","Jawa Timur","Kota",1,2.56,3.57,1.01,78.79,3.06],["Kota Blitar","Jawa Timur","Kota",1,3.19,4.11,0.92,81.27,6.75],["Kota Kediri","Jawa Timur","Kota",1,3.06,3.89,0.83,81.35,6.51],["Kota Madiun","Jawa Timur","Kota",1,3.06,4.57,1.51,83.48,4.38],["Kota Malang","Jawa Timur","Kota",1,2.73,4.24,1.51,84.06,3.91],["Kota Mojokerto","Jawa Timur","Kota",1,2.92,4.32,1.4,80.92,5.57],["Kota Pasuruan","Jawa Timur","Kota",1,1.83,4.07,2.24,77.75,6.32],["Kota Probolinggo","Jawa Timur","Kota",1,2.59,4.04,1.45,76.27,6.18],["Kota Surabaya","Jawa Timur","Kota",1,3.16,4.54,1.38,84.14,3.96],["Kab. Bengkayang","Kalimantan Barat","Kabupaten",0,1.76,3.12,1.36,70.3,6.0],["Kab. Kapuas Hulu","Kalimantan Barat","Kabupaten",0,2.37,2.82,0.45,68.58,7.4],["Kab. Kayong Utara","Kalimantan Barat","Kabupaten",0,2.06,2.68,0.62,65.74,8.84],["Kab. Ketapang","Kalimantan Barat","Kabupaten",0,1.2,3.06,1.86,69.42,8.5],["Kab. Kubu Raya","Kalimantan Barat","Kabupaten",0,2.3,3.38,1.08,70.25,4.08],["Kab. Landak","Kalimantan Barat","Kabupaten",0,2.36,2.4,0.04,69.08,8.98],["Kab. Mempawah","Kalimantan Barat","Kabupaten",0,2.28,2.73,0.45,68.56,4.83],["Kab. Sambas","Kalimantan Barat","Kabupaten",0,1.69,2.91,1.22,69.31,6.53],["Kab. Sanggau","Kalimantan Barat","Kabupaten",0,2.27,3.29,1.02,68.43,4.67],["Kab. Sekadau","Kalimantan Barat","Kabupaten",0,2.5,3.13,0.63,67.25,5.66],["Kab. Sintang","Kalimantan Barat","Kabupaten",0,1.51,2.3,0.79,69.42,8.03],["Kota Pontianak","Kalimantan Barat","Kota",0,3.31,3.49,0.18,81.57,4.2],["Kota Singkawang","Kalimantan Barat","Kota",0,2.6,3.35,0.75,73.87,4.53],["Kab. Balangan","Kalimantan Selatan","Kabupaten",0,1.77,3.34,1.57,71.34,4.87],["Kab. Banjar","Kalimantan Selatan","Kabupaten",0,2.43,2.87,0.44,71.87,2.36],["Kab. Barito Kuala","Kalimantan Selatan","Kabupaten",0,2.33,2.99,0.66,68.84,4.36],["Kab. Hulu Sungai Tengah","Kalimantan Selatan","Kabupaten",0,2.46,3.37,0.91,70.69,5.81],["Kab. Kotabaru","Kalimantan Selatan","Kabupaten",0,1.99,2.43,0.44,70.61,null],["Kab. Tabalong","Kalimantan Selatan","Kabupaten",0,2.48,3.7,1.22,74.41,5.64],["Kab. Tanah Bumbu","Kalimantan Selatan","Kabupaten",0,2.5,3.3,0.8,72.95,3.41],["Kab. Tanah Laut","Kalimantan Selatan","Kabupaten",0,2.75,3.12,0.37,71.43,3.74],["Kab. Tapin","Kalimantan Selatan","Kabupaten",0,1.89,3.81,1.92,72.51,3.33],["Kota Banjarbaru","Kalimantan Selatan","Kota",0,2.11,2.74,0.63,80.51,3.79],["Kota Banjarmasin","Kalimantan Selatan","Kota",0,2.48,4.06,1.58,79.05,4.58],["Kab. Barito Selatan","Kalimantan Tengah","Kabupaten",0,2.28,3.2,0.92,72.36,4.83],["Kab. Barito Timur","Kalimantan Tengah","Kabupaten",0,1.57,2.82,1.25,73.26,6.66],["Kab. Barito Utara","Kalimantan Tengah","Kabupaten",0,1.63,2.73,1.1,72.31,5.67],["Kab. Katingan","Kalimantan Tengah","Kabupaten",0,2.22,3.25,1.03,70.7,5.26],["Kab. Kotawaringin Barat","Kalimantan Tengah","Kabupaten",0,2.35,2.87,0.52,74.44,4.11],["Kab. Kotawaringin Timur","Kalimantan Tengah","Kabupaten",0,1.66,3.22,1.56,72.66,5.66],["Kab. Lamandau","Kalimantan Tengah","Kabupaten",0,2.27,3.15,0.88,72.25,3.25],["Kab. Pulang Pisau","Kalimantan Tengah","Kabupaten",0,1.79,3.16,1.37,70.27,4.56],["Kab. Sukamara","Kalimantan Tengah","Kabupaten",0,1.51,2.75,1.24,69.85,4.14],["Kota Palangka Raya","Kalimantan Tengah","Kota",0,2.11,3.75,1.64,82.2,3.52],["Kab. Kutai Barat","Kalimantan Timur","Kabupaten",0,1.83,2.62,0.79,74.5,9.56],["Kab. Kutai Kartanegara","Kalimantan Timur","Kabupaten",0,2.48,3.09,0.61,75.91,7.28],["Kab. Kutai Timur","Kalimantan Timur","Kabupaten",0,1.03,3.02,1.99,75.53,8.81],["Kab. Mahakam Ulu","Kalimantan Timur","Kabupaten",0,1.03,2.25,1.22,70.35,10.75],["Kab. Paser","Kalimantan Timur","Kabupaten",0,1.36,3.27,1.91,74.7,8.63],["Kab. Penajam Paser Utara","Kalimantan Timur","Kabupaten",0,2.14,2.87,0.73,73.9,6.69],["Kota Balikpapan","Kalimantan Timur","Kota",0,2.44,3.96,1.52,82.24,2.23],["Kota Bontang","Kalimantan Timur","Kota",0,2.11,3.39,1.28,82.42,3.74],["Kota Samarinda","Kalimantan Timur","Kota",0,2.46,3.85,1.39,82.81,4.3],["Kab. Bulungan","Kalimantan Utara","Kabupaten",0,2.1,3.93,1.83,73.34,8.76],["Kota Tarakan","Kalimantan Utara","Kota",0,2.2,3.11,0.91,77.96,5.56],["Kab. Bangka","Kepulauan Bangka Belitung","Kabupaten",0,2.25,2.8,0.55,73.98,4.24],["Kab. Bangka Barat","Kepulauan Bangka Belitung","Kabupaten",0,2.27,3.16,0.89,70.67,2.59],["Kab. Bangka Selatan","Kepulauan Bangka Belitung","Kabupaten",0,2.88,3.25,0.37,68.86,3.74],["Kab. Bangka Tengah","Kepulauan Bangka Belitung","Kabupaten",0,2.76,4.07,1.31,71.9,5.94],["Kab. Belitung","Kepulauan Bangka Belitung","Kabupaten",0,2.4,3.35,0.95,74.47,6.11],["Kab. Belitung Timur","Kepulauan Bangka Belitung","Kabupaten",0,2.15,4.16,2.01,73.19,6.36],["Kota Pangkal Pinang","Kepulauan Bangka Belitung","Kota",0,2.1,3.81,1.71,80.4,4.04],["Kab. Bintan","Kepulauan Riau","Kabupaten",0,2.06,3.25,1.19,76.18,5.44],["Kab. Kepulauan Anambas","Kepulauan Riau","Kabupaten",0,2.03,3.04,1.01,70.93,6.67],["Kab. Natuna","Kepulauan Riau","Kabupaten",0,2.24,3.61,1.37,74.56,5.04],["Kota Batam","Kepulauan Riau","Kota",0,2.64,3.77,1.13,82.86,4.85],["Kota Tanjungpinang","Kepulauan Riau","Kota",0,2.29,3.25,0.96,80.63,6.86],["Kab. Lampung Barat","Lampung","Kabupaten",0,1.91,2.62,0.71,69.84,10.68],["Kab. Lampung Tengah","Lampung","Kabupaten",0,1.67,2.68,1.01,72.37,10.37],["Kab. Lampung Utara","Lampung","Kabupaten",0,1.86,3.12,1.26,69.62,16.92],["Kab. Mesuji","Lampung","Kabupaten",0,1.69,3.99,2.3,66.46,6.31],["Kab. Pringsewu","Lampung","Kabupaten",0,2.03,3.05,1.02,72.29,8.32],["Kab. Tulang Bawang Barat","Lampung","Kabupaten",0,1.97,2.49,0.52,68.46,7.22],["Kab. Way Kanan","Lampung","Kabupaten",0,2.1,3.52,1.42,69.31,10.43],["Kota Bandar Lampung","Lampung","Kota",0,1.2,2.98,1.78,79.19,7.37],["Kota Metro","Lampung","Kota",0,2.14,3.34,1.2,78.93,6.78],["Kab. Maluku Barat Daya","Maluku","Kabupaten",0,1.79,2.05,0.26,64.86,27.95],["Kab. Seram Bagian Barat","Maluku","Kabupaten",0,1.6,1.9,0.3,68.39,22.31],["Kota Ambon","Maluku","Kota",0,2.08,2.64,0.56,82.56,5.13],["Kab. Halmahera Utara","Maluku Utara","Kabupaten",0,2.02,2.73,0.71,69.78,4.71],["Kota Tidore Kepulauan","Maluku Utara","Kota",0,1.2,2.32,1.12,72.91,6.56],["Kab. Lombok Barat","Nusa Tenggara Barat","Kabupaten",0,2.64,3.05,0.41,70.67,12.65],["Kab. Lombok Tengah","Nusa Tenggara Barat","Kabupaten",0,2.37,3.04,0.67,69.17,12.07],["Kab. Lombok Utara","Nusa Tenggara Barat","Kabupaten",0,2.01,2.71,0.7,67.24,23.96],["Kab. Sumbawa","Nusa Tenggara Barat","Kabupaten",0,2.11,2.9,0.79,70.55,12.87],["Kab. Sumbawa Barat","Nusa Tenggara Barat","Kabupaten",0,2.65,3.45,0.8,73.86,12.23],["Kota Bima","Nusa Tenggara Barat","Kota",0,2.02,2.66,0.64,78.04,8.12],["Kota Mataram","Nusa Tenggara Barat","Kota",0,2.34,3.55,1.21,80.6,8.0],["Kab. Alor","Nusa Tenggara Timur","Kabupaten",0,1.9,2.19,0.29,63.82,19.87],["Kab. Kupang","Nusa Tenggara Timur","Kabupaten",0,1.6,2.48,0.88,66.57,21.37],["Kab. Malaka","Nusa Tenggara Timur","Kabupaten",0,1.31,2.17,0.86,62.73,13.92],["Kab. Manggarai","Nusa Tenggara Timur","Kabupaten",0,1.55,2.9,1.35,67.28,19.01],["Kab. Manggarai Barat","Nusa Tenggara Timur","Kabupaten",0,2.34,3.47,1.13,66.65,16.74],["Kab. Manggarai Timur","Nusa Tenggara Timur","Kabupaten",0,1.15,2.64,1.49,64.2,24.9],["Kab. Sabu Raijua","Nusa Tenggara Timur","Kabupaten",0,1.05,1.84,0.79,59.58,28.13],["Kab. Sikka","Nusa Tenggara Timur","Kabupaten",0,1.11,2.02,0.91,67.41,11.89],["Kab. Sumba Barat","Nusa Tenggara Timur","Kabupaten",0,1.68,3.12,1.44,66.06,26.52],["Kab. Sumba Barat Daya","Nusa Tenggara Timur","Kabupaten",0,1.56,2.03,0.47,64.27,27.2],["Kab. Sumba Timur","Nusa Tenggara Timur","Kabupaten",0,1.75,2.56,0.81,67.68,27.04],["Kab. Timor Tengah Selatan","Nusa Tenggara Timur","Kabupaten",0,2.26,2.83,0.57,64.36,24.68],["Kab. Timor Tengah Utara","Nusa Tenggara Timur","Kabupaten",0,1.1,2.43,1.33,65.83,20.89],["Kab. Jayapura","Papua","Kabupaten",0,1.47,2.82,1.35,74.11,11.6],["Kab. Keerom","Papua","Kabupaten",0,1.09,1.14,0.05,68.68,15.84],["Kota Jayapura","Papua","Kota",0,1.74,2.35,0.61,81.67,10.72],["Kab. Fak-Fak","Papua Barat","Kabupaten",0,1.63,1.68,0.05,70.39,20.86],["Kab. Kaimana","Papua Barat","Kabupaten",0,1.12,2.15,1.03,67.6,14.41],["Kab. Manokwari","Papua Barat","Kabupaten",0,1.51,1.75,0.24,73.83,18.45],["Kab. Teluk Wondama","Papua Barat","Kabupaten",0,1.53,2.4,0.87,62.36,28.47],["Kab. Raja Ampat","Papua Barat Daya","Kabupaten",0,1.22,1.33,0.11,65.86,15.83],["Kab. Sorong","Papua Barat Daya","Kabupaten",0,1.87,2.49,0.62,68.29,25.71],["Kota Sorong","Papua Barat Daya","Kota",0,1.03,1.78,0.75,79.93,13.67],["Kab. Jayawijaya","Papua Pegunungan","Kabupaten",0,1.55,2.43,0.88,61.03,32.28],["Kab. Indragiri Hulu","Riau","Kabupaten",0,1.77,2.89,1.12,71.48,6.02],["Kab. Kampar","Riau","Kabupaten",0,1.67,2.96,1.29,74.85,6.92],["Kab. Kepulauan Meranti","Riau","Kabupaten",0,1.19,3.08,1.89,67.92,23.15],["Kab. Kuantan Singingi","Riau","Kabupaten",0,2.96,3.23,0.27,72.33,7.89],["Kab. Pelalawan","Riau","Kabupaten",0,1.38,2.5,1.12,74.08,8.49],["Kab. Rokan Hulu","Riau","Kabupaten",0,1.78,3.46,1.68,71.82,9.62],["Kab. Siak","Riau","Kabupaten",0,1.9,3.54,1.64,75.45,5.08],["Kota Dumai","Riau","Kota",0,2.56,3.9,1.34,76.19,3.14],["Kota Pekanbaru","Riau","Kota",0,2.17,3.85,1.68,82.89,3.15],["Kab. Majene","Sulawesi Barat","Kabupaten",0,1.52,3.04,1.52,69.42,13.64],["Kab. Mamuju","Sulawesi Barat","Kabupaten",0,1.52,2.42,0.9,70.4,7.15],["Kab. Polewali Mandar","Sulawesi Barat","Kabupaten",0,2.71,3.88,1.17,66.22,15.66],["Kab. Bantaeng","Sulawesi Selatan","Kabupaten",0,2.28,3.64,1.36,71.48,8.26],["Kab. Barru","Sulawesi Selatan","Kabupaten",0,2.07,2.79,0.72,73.06,8.31],["Kab. Bone","Sulawesi Selatan","Kabupaten",0,2.08,3.18,1.1,68.36,9.58],["Kab. Bulukumba","Sulawesi Selatan","Kabupaten",0,2.03,2.56,0.53,71.97,6.71],["Kab. Enrekang","Sulawesi Selatan","Kabupaten",0,2.34,3.2,0.86,74.61,11.25],["Kab. Gowa","Sulawesi Selatan","Kabupaten",0,1.47,3.63,2.16,72.26,6.85],["Kab. Jeneponto","Sulawesi Selatan","Kabupaten",0,1.84,3.1,1.26,66.38,11.82],["Kab. Kepulauan Selayar","Sulawesi Selatan","Kabupaten",0,2.05,2.57,0.52,70.03,10.79],["Kab. Luwu","Sulawesi Selatan","Kabupaten",0,2.29,2.6,0.31,72.79,11.7],["Kab. Luwu Utara","Sulawesi Selatan","Kabupaten",0,2.68,3.26,0.58,72.07,11.24],["Kab. Maros","Sulawesi Selatan","Kabupaten",0,2.19,3.15,0.96,72.11,9.32],["Kab. Pangkajene dan Kepulauan","Sulawesi Selatan","Kabupaten",0,2.11,2.64,0.53,71.22,12.41],["Kab. Pinrang","Sulawesi Selatan","Kabupaten",0,2.62,3.49,0.87,73.55,8.55],["Kab. Sidenreng Rappang","Sulawesi Selatan","Kabupaten",0,1.79,3.04,1.25,73.21,5.02],["Kab. Sinjai","Sulawesi Selatan","Kabupaten",0,2.07,3.01,0.94,69.52,7.82],["Kab. Soppeng","Sulawesi Selatan","Kabupaten",0,1.71,2.98,1.27,71.39,6.9],["Kab. Wajo","Sulawesi Selatan","Kabupaten",0,2.42,2.77,0.35,71.52,6.47],["Kota Makassar","Sulawesi Selatan","Kota",0,2.04,4.02,1.98,null,4.97],["Kota Palopo","Sulawesi Selatan","Kota",0,2.34,3.12,0.78,79.94,7.35],["Kota Parepare","Sulawesi Selatan","Kota",0,2.17,2.62,0.45,79.64,5.27],["Kab. Banggai Kepulauan","Sulawesi Tengah","Kabupaten",0,1.45,2.55,1.1,67.43,12.32],["Kab. Buol","Sulawesi Tengah","Kabupaten",0,1.93,3.19,1.26,70.28,13.08],["Kab. Morowali","Sulawesi Tengah","Kabupaten",0,1.53,3.25,1.72,73.54,11.55],["Kab. Poso","Sulawesi Tengah","Kabupaten",0,1.97,2.52,0.55,72.87,14.23],["Kab. Sigi","Sulawesi Tengah","Kabupaten",0,1.61,2.29,0.68,70.51,12.06],["Kota Palu","Sulawesi Tengah","Kota",0,1.06,2.58,1.52,82.88,5.94],["Kab. Buton Selatan","Sulawesi Tenggara","Kabupaten",0,1.09,2.25,1.16,67.0,14.28],["Kab. Buton Tengah","Sulawesi Tenggara","Kabupaten",0,1.83,2.63,0.8,66.47,14.4],["Kab. Buton Utara","Sulawesi Tenggara","Kabupaten",0,1.11,2.19,1.08,70.6,14.09],["Kab. Kolaka","Sulawesi Tenggara","Kabupaten",0,2.5,3.68,1.18,75.18,11.67],["Kab. Kolaka Utara","Sulawesi Tenggara","Kabupaten",0,1.79,2.63,0.84,71.7,13.51],["Kab. Konawe Selatan","Sulawesi Tenggara","Kabupaten",0,2.52,3.68,1.16,71.19,11.2],["Kota Kendari","Sulawesi Tenggara","Kota",0,1.79,3.23,1.44,85.33,4.23],["Kab. Bolaang Mongondow","Sulawesi Utara","Kabupaten",0,2.03,2.73,0.7,70.29,7.74],["Kab. Bolaang Mongondow Selatan","Sulawesi Utara","Kabupaten",0,1.83,2.66,0.83,67.14,11.33],["Kab. Bolaang Mongondow Utara","Sulawesi Utara","Kabupaten",0,2.02,2.34,0.32,69.32,7.88],["Kab. Kepulauan Sangihe","Sulawesi Utara","Kabupaten",0,1.56,2.46,0.9,72.71,10.84],["Kab. Kepulauan Talaud","Sulawesi Utara","Kabupaten",0,1.5,2.39,0.89,71.77,8.17],["Kab. Minahasa","Sulawesi Utara","Kabupaten",0,1.99,2.23,0.24,77.74,6.53],["Kab. Minahasa Tenggara","Sulawesi Utara","Kabupaten",0,2.46,3.02,0.56,72.66,11.72],["Kab. Minahasa Utara","Sulawesi Utara","Kabupaten",0,1.42,3.37,1.95,75.89,6.95],["Kota Bitung","Sulawesi Utara","Kota",0,2.11,3.31,1.2,75.71,6.27],["Kota KotaMobagu","Sulawesi Utara","Kota",0,2.41,2.93,0.52,75.27,5.12],["Kota Manado","Sulawesi Utara","Kota",0,1.84,3.93,2.09,80.63,5.43],["Kota Tomohon","Sulawesi Utara","Kota",0,1.67,3.03,1.36,78.89,5.38],["Kab. Agam","Sumatera Barat","Kabupaten",0,2.31,2.56,0.25,74.66,6.83],["Kab. Dharmasraya","Sumatera Barat","Kabupaten",0,1.09,3.61,2.52,74.06,5.32],["Kab. Limapuluh Kota","Sumatera Barat","Kabupaten",0,2.68,2.7,0.02,71.14,6.92],["Kab. Padang Pariaman","Sumatera Barat","Kabupaten",0,2.6,3.51,0.91,73.1,6.27],["Kab. Pasaman","Sumatera Barat","Kabupaten",0,1.36,2.67,1.31,68.89,6.74],["Kab. Pasaman Barat","Sumatera Barat","Kabupaten",0,2.18,3.66,1.48,70.93,7.0],["Kab. Pesisir Selatan","Sumatera Barat","Kabupaten",0,3.34,4.23,0.89,72.02,7.49],["Kab. Sijunjung","Sumatera Barat","Kabupaten",0,1.88,3.0,1.12,70.23,5.78],["Kab. Solok","Sumatera Barat","Kabupaten",0,2.82,3.49,0.67,71.02,7.31],["Kab. Solok Selatan","Sumatera Barat","Kabupaten",0,1.21,3.28,2.07,71.5,6.56],["Kab. Tanah Datar","Sumatera Barat","Kabupaten",0,2.18,2.81,0.63,74.9,4.28],["Kota Bukittinggi","Sumatera Barat","Kota",0,2.26,2.49,0.23,82.51,4.08],["Kota Padang","Sumatera Barat","Kota",0,2.47,3.96,1.49,83.99,4.06],["Kota Padang Panjang","Sumatera Barat","Kota",0,2.09,3.16,1.07,80.17,5.31],["Kota Pariaman","Sumatera Barat","Kota",0,2.42,3.44,1.02,78.88,4.26],["Kota Payakumbuh","Sumatera Barat","Kota",0,2.42,3.75,1.33,80.61,5.19],["Kota Sawahlunto","Sumatera Barat","Kota",0,2.07,3.41,1.34,75.13,2.33],["Kota Solok","Sumatera Barat","Kota",0,2.34,3.75,1.41,80.0,3.07],["Kab. Banyuasin","Sumatera Selatan","Kabupaten",0,2.0,2.71,0.71,69.51,9.31],["Kab. Empat Lawang","Sumatera Selatan","Kabupaten",0,2.23,2.34,0.11,67.25,10.78],["Kab. Lahat","Sumatera Selatan","Kabupaten",0,2.03,2.33,0.3,69.77,14.14],["Kab. Muara Enim","Sumatera Selatan","Kabupaten",0,2.73,3.29,0.56,71.0,9.79],["Kab. Musi Banyuasin","Sumatera Selatan","Kabupaten",0,2.82,3.62,0.8,70.12,12.88],["Kab. Musi Rawas","Sumatera Selatan","Kabupaten",0,2.0,3.09,1.09,68.95,13.44],["Kab. Musi Rawas Utara","Sumatera Selatan","Kabupaten",0,1.09,2.38,1.29,67.4,17.38],["Kab. Ogan Ilir","Sumatera Selatan","Kabupaten",0,1.29,2.94,1.65,69.4,12.3],["Kab. Ogan Komering Ilir","Sumatera Selatan","Kabupaten",0,2.49,3.55,1.06,69.33,12.08],["Kab. Ogan Komering Ulu","Sumatera Selatan","Kabupaten",0,2.39,2.62,0.23,71.55,10.68],["Kab. Ogan Komering Ulu Sel.","Sumatera Selatan","Kabupaten",0,2.19,2.4,0.21,67.65,9.86],["Kab. Penukal Abab Lematang Ilir","Sumatera Selatan","Kabupaten",0,1.99,2.66,0.67,67.48,9.82],["Kota Lubuk Linggau","Sumatera Selatan","Kota",0,1.71,2.64,0.93,76.82,11.14],["Kota Pagar Alam","Sumatera Selatan","Kota",0,1.06,2.54,1.48,71.19,8.18],["Kota Palembang","Sumatera Selatan","Kota",0,2.66,3.51,0.85,80.57,9.77],["Kota Prabumulih","Sumatera Selatan","Kota",0,2.56,3.37,0.81,77.08,10.13],["Kab. Asahan","Sumatera Utara","Kabupaten",0,1.71,2.86,1.15,72.09,8.12],["Kab. Batubara","Sumatera Utara","Kabupaten",0,1.96,2.67,0.71,70.83,10.94],["Kab. Dairi","Sumatera Utara","Kabupaten",0,2.07,2.69,0.62,73.92,7.1],["Kab. Deli Serdang","Sumatera Utara","Kabupaten",0,2.39,3.57,1.18,76.92,3.44],["Kab. Humbang Hasundutan","Sumatera Utara","Kabupaten",0,1.5,2.8,1.3,71.59,8.44],["Kab. Karo","Sumatera Utara","Kabupaten",0,2.06,3.04,0.98,76.55,7.37],["Kab. Labuhanbatu Selatan","Sumatera Utara","Kabupaten",0,1.86,1.93,0.07,73.67,7.73],["Kab. Labuhanbatu Utara","Sumatera Utara","Kabupaten",0,2.47,2.78,0.31,74.4,8.98],["Kab. Langkat","Sumatera Utara","Kabupaten",0,2.36,3.66,1.3,72.73,9.04],["Kab. Mandailing Natal","Sumatera Utara","Kabupaten",0,2.73,2.89,0.16,69.33,8.69],["Kab. Padang Lawas Utara","Sumatera Utara","Kabupaten",0,1.39,2.26,0.87,72.32,8.97],["Kab. Pakpak Bharat","Sumatera Utara","Kabupaten",0,2.69,2.66,-0.03,70.36,6.87],["Kab. Samosir","Sumatera Utara","Kabupaten",0,3.16,2.7,-0.46,72.88,11.63],["Kab. Serdang Bedagai","Sumatera Utara","Kabupaten",0,2.28,2.65,0.37,72.47,6.97],["Kab. Tapanuli Selatan","Sumatera Utara","Kabupaten",0,2.87,3.14,0.27,72.14,6.92],["Kab. Tapanuli Tengah","Sumatera Utara","Kabupaten",0,1.52,2.38,0.86,71.52,11.8],["Kab. Tapanuli Utara","Sumatera Utara","Kabupaten",0,2.12,2.85,0.73,75.23,8.21],["Kab. Toba","Sumatera Utara","Kabupaten",0,1.69,2.95,1.26,null,8.07],["Kota Binjai","Sumatera Utara","Kota",0,1.67,3.12,1.45,78.1,4.75],["Kota Gunung Sitoli","Sumatera Utara","Kota",0,2.03,2.33,0.3,71.41,14.72],["Kota Medan","Sumatera Utara","Kota",0,2.76,3.67,0.91,82.76,7.94],["Kota Padangsidimpuan","Sumatera Utara","Kota",0,2.06,2.66,0.6,76.96,6.23],["Kota Pematang Siantar","Sumatera Utara","Kota",0,1.53,3.06,1.53,81.17,7.2],["Kota Tanjung Balai","Sumatera Utara","Kota",0,2.85,3.24,0.39,71.1,11.97],["Kota Tebing Tinggi","Sumatera Utara","Kota",0,2.48,3.79,1.31,77.45,8.79]];
+const D = RAW.map(r => ({name:r[0], prov:r[1], type:r[2], java:r[3], s21:r[4], s24:r[5], ch:r[6], hdi:r[7], pov:r[8]}));
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const mean = a => a.length ? a.reduce((x,y)=>x+y,0)/a.length : NaN;
+const f2 = x => isNaN(x) ? "–" : x.toFixed(2);
+const st = {group:"all", prov:"all", type:"all", name:""};
+
+const provs = [...new Set(D.map(d=>d.prov))].sort();
+const fProv = document.getElementById("fProv");
+provs.forEach(p => fProv.add(new Option(p,p)));
+
+function filtered(){
+  const q = st.name.toLowerCase();
+  return D.filter(d => (st.group==="all" || d.java==+st.group) && (st.prov==="all" || d.prov===st.prov)
+    && (st.type==="all" || d.type===st.type) && (!q || d.name.toLowerCase().includes(q)));
+}
+
+function base(){
+  return {
+    paper_bgcolor:"rgba(0,0,0,0)", plot_bgcolor:"rgba(0,0,0,0)",
+    font:{family:"system-ui,-apple-system,Segoe UI,Roboto,sans-serif", size:12, color:css("--text-secondary")},
+    margin:{l:48,r:16,t:10,b:44}, showlegend:false,
+    hoverlabel:{bgcolor:css("--surface-1"), bordercolor:css("--border"), font:{color:css("--text-primary"), size:13}},
+    xaxis:{gridcolor:css("--grid"), zeroline:false, linecolor:css("--border"), fixedrange:true},
+    yaxis:{gridcolor:css("--grid"), zeroline:false, linecolor:css("--border"), fixedrange:true}
+  };
+}
+const CFG = {displayModeBar:false, responsive:true};
+const colOf = d => d.java ? css("--java") : css("--outside");
+const hoverTxt = d => `<b>${d.name}</b><br>${d.prov}<br>2021: ${f2(d.s21)} → 2024: ${f2(d.s24)} (${d.ch>=0?"+":""}${f2(d.ch)})`
+  + (d.hdi ? `<br>HDI 2024: ${d.hdi.toFixed(1)}` : "");
+
+function tiles(sel){
+  const j = sel.filter(d=>d.java), o = sel.filter(d=>!d.java);
+  const g21 = mean(j.map(d=>d.s21)) - mean(o.map(d=>d.s21));
+  const g24 = mean(j.map(d=>d.s24)) - mean(o.map(d=>d.s24));
+  const imp = sel.length ? sel.filter(d=>d.ch>0).length/sel.length : NaN;
+  const t = [
+    ["Regions selected", sel.length, "regencies and cities"],
+    ["Mean SPBE index", `${f2(mean(sel.map(d=>d.s21)))} → ${f2(mean(sel.map(d=>d.s24)))}`, "2021 → 2024, scale 1–5"],
+    ["Improved", isNaN(imp) ? "–" : Math.round(imp*100)+"%", "share with a higher 2024 score"],
+    ["Java gap", (j.length && o.length) ? `${f2(g21)} → ${f2(g24)}` : "–", (j.length && o.length) ? "Java minus outside Java, 2021 → 2024" : "needs both groups in the selection"]
+  ];
+  document.getElementById("tiles").innerHTML = t.map(x=>`<div class="tile"><div class="k">${x[0]}</div><div class="v">${x[1]}</div><div class="n">${x[2]}</div></div>`).join("");
+  document.getElementById("count").textContent = `${sel.length} of ${D.length} regions`;
+}
+
+function slope(sel){
+  const tr = [];
+  [[1,"Java","--java"],[0,"Outside Java","--outside"]].forEach(([g,lab,c]) => {
+    const s = sel.filter(d=>d.java===g); if(!s.length) return;
+    const y = [mean(s.map(d=>d.s21)), mean(s.map(d=>d.s24))];
+    tr.push({x:["2021","2024"], y, mode:"lines+markers+text", line:{color:css(c), width:2.5}, marker:{size:10, color:css(c), line:{color:css("--surface-1"), width:2}},
+      text:y.map(v=>f2(v)), textposition:["middle left","middle right"], textfont:{color:css("--text-primary"), size:13},
+      hovertemplate:`<b>${lab}</b><br>%{x}: %{y:.2f}<br>n = ${s.length}<extra></extra>`, cliponaxis:false});
+  });
+  const L = base(); L.xaxis.type="category"; L.xaxis.range=[-0.5,1.5]; L.yaxis.title={text:"Mean SPBE index"}; L.margin.l=56;
+  Plotly.react("pSlope", tr, L, CFG);
+}
+
+function catchup(sel){
+  const tr = [0,1].map(g => { const s = sel.filter(d=>d.java===g); return {
+    x:s.map(d=>d.s21), y:s.map(d=>d.ch), text:s.map(hoverTxt), mode:"markers", type:"scatter",
+    marker:{size:8, color:css(g?"--java":"--outside"), opacity:.75, line:{color:css("--surface-1"), width:1}},
+    hovertemplate:"%{text}<extra></extra>"};});
+  const L = base(); L.xaxis.title={text:"SPBE index 2021"}; L.yaxis.title={text:"Change 2021 → 2024"};
+  L.shapes=[{type:"line", xref:"paper", x0:0, x1:1, y0:0, y1:0, line:{color:css("--text-muted"), width:1}}];
+  Plotly.react("pCatch", tr, L, CFG);
+}
+
+function provBars(){
+  // province bars use all regions matching group/type/name, so the clicked province stays highlighted in context
+  const q = st.name.toLowerCase();
+  const sel = D.filter(d => (st.group==="all" || d.java==+st.group) && (st.type==="all" || d.type===st.type) && (!q || d.name.toLowerCase().includes(q)));
+  const rows = provs.map(p => { const s = sel.filter(d=>d.prov===p); return {p, n:s.length, m:mean(s.map(d=>d.s24)), m21:mean(s.map(d=>d.s21)), java:s.length?s[0].java:0}; })
+    .filter(r=>r.n).sort((a,b)=>b.m-a.m);
+  const colors = rows.map(r => (st.prov!=="all" && r.p!==st.prov) ? css("--other") : css(r.java?"--java":"--outside"));
+  const tr = [{type:"bar", x:rows.map(r=>r.p), y:rows.map(r=>r.m), marker:{color:colors, line:{color:css("--surface-1"), width:2}},
+    customdata:rows.map(r=>[r.n, f2(r.m21)]),
+    hovertemplate:"<b>%{x}</b><br>SPBE 2024 mean: %{y:.2f}<br>2021 mean: %{customdata[1]}<br>%{customdata[0]} regions<extra></extra>"}];
+  const L = base(); L.margin.b=120; L.xaxis.tickangle=-50; L.xaxis.gridcolor="rgba(0,0,0,0)"; L.yaxis.title={text:"Mean SPBE 2024"}; L.bargap=.25;
+  Plotly.react("pProv", tr, L, CFG);
+}
+
+function hdi(sel){
+  const tr = [0,1].map(g => { const s = sel.filter(d=>d.java===g && d.hdi); return {
+    x:s.map(d=>d.hdi), y:s.map(d=>d.s24), text:s.map(hoverTxt), mode:"markers", type:"scatter",
+    marker:{size:8, color:css(g?"--java":"--outside"), opacity:.75, line:{color:css("--surface-1"), width:1}},
+    hovertemplate:"%{text}<extra></extra>"};});
+  const L = base(); L.xaxis.title={text:"HDI 2024"}; L.yaxis.title={text:"SPBE index 2024"};
+  Plotly.react("pHdi", tr, L, CFG);
+}
+
+function dist(sel){
+  const edges = []; for(let x=1; x<5; x+=0.25) edges.push(+x.toFixed(2));
+  const lab = edges.map(e=>`${e.toFixed(2)}–${(e+0.25).toFixed(2)}`);
+  const cnt = k => edges.map(e => sel.filter(d => d[k]>=e && d[k]<e+0.25).length);
+  const tr = [["s21","2021","--other"],["s24","2024","--java"]].map(([k,y,c]) => ({type:"bar", x:edges.map(e=>e+0.125), y:cnt(k), name:y,
+    customdata:lab, marker:{color:css(c), line:{color:css("--surface-1"), width:1}},
+    hovertemplate:`${y}, SPBE %{customdata}: %{y} regions<extra></extra>`}));
+  const L = base(); L.barmode="group"; L.bargap=.15; L.xaxis.title={text:"SPBE index"}; L.yaxis.title={text:"Regions"}; L.xaxis.range=[1,5];
+  Plotly.react("pDist", tr, L, CFG);
+}
+
+let sortKey="ch", sortDir=-1;
+const COLS = [["name","Region"],["prov","Province"],["type","Type"],["s21","2021","num"],["s24","2024","num"],["ch","Change","num"],["hdi","HDI 2024","num"]];
+function table(sel){
+  const s = [...sel].sort((a,b)=>{const x=a[sortKey], y=b[sortKey]; return (typeof x==="string" ? x.localeCompare(y) : (x??-1)-(y??-1))*sortDir;});
+  const head = "<tr>"+COLS.map(([k,l,c])=>`<th class="${c||""}" data-k="${k}">${l}${k===sortKey?(sortDir>0?" ▲":" ▼"):""}</th>`).join("")+"</tr>";
+  const body = s.map(d=>`<tr><td>${d.name}</td><td>${d.prov}</td><td>${d.type}</td><td class="num">${f2(d.s21)}</td><td class="num">${f2(d.s24)}</td><td class="num">${d.ch>=0?"+":""}${f2(d.ch)}</td><td class="num">${d.hdi?d.hdi.toFixed(1):"–"}</td></tr>`).join("");
+  const t = document.getElementById("tbl"); t.innerHTML = "<thead>"+head+"</thead><tbody>"+body+"</tbody>";
+  t.querySelectorAll("th").forEach(th => th.onclick = () => { const k=th.dataset.k; sortDir = (k===sortKey) ? -sortDir : (typeof D[0][k]==="string"?1:-1); sortKey=k; table(filtered()); });
+}
+
+function render(){ const sel = filtered(); tiles(sel); slope(sel); catchup(sel); provBars(); hdi(sel); dist(sel); table(sel); }
+
+const bind = (id,key,ev="change") => document.getElementById(id).addEventListener(ev, e => { st[key]=e.target.value; render(); });
+bind("fGroup","group"); bind("fProv","prov"); bind("fType","type"); bind("fName","name","input");
+document.getElementById("reset").onclick = () => { Object.assign(st,{group:"all",prov:"all",type:"all",name:""});
+  ["fGroup","fProv","fType"].forEach(i=>document.getElementById(i).value="all"); document.getElementById("fName").value=""; render(); };
+
+render();
+document.getElementById("pProv").on("plotly_click", ev => { const p = ev.points[0].x; st.prov = (st.prov===p) ? "all" : p; fProv.value = st.prov; render(); });
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", render);
+</script>
+</body>
+</html>

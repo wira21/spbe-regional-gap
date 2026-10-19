@@ -2,6 +2,8 @@
 
 A personal research project. I built a dataset of the official digital government (SPBE) scores of Indonesian regencies and cities for 2021 and 2024, matched it with public socio-economic data, and asked: **did the regions that started behind catch up?**
 
+**[Open the interactive dashboard](https://wira21.github.io/spbe-regional-gap/)**: filter by province, island group and type, and hover any region for details.
+
 ![Java gap](figures/fig1_java_gap.png)
 
 ## Key findings
