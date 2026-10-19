@@ -1,0 +1,524 @@
+name,type,province_2024,spbe_2021,predikat_2021,spbe_2024,predikat_2024,change_2021_2024,poverty_2021,hdi_2021,poverty_2024,hdi_2024,poor_2021,pop_2021_thousand,internet_2024,internet_2021,innovation_2024
+Pemerintah Aceh,Provinsi,Aceh,3.19,Baik,3.64,Sangat Baik,0.45,15.33,72.18,14.23,74.03,834.24,5441.8786692759295,62.93,49.23,55.87
+Pemerintah Kab. Aceh Barat,Kabupaten,Aceh,2.1,Cukup,2.69,Baik,0.59,18.81,71.67,17.6,73.69,39.83,211.74906964380648,62.93,49.23,59.19
+Pemerintah Kab. Aceh Barat Daya,Kabupaten,Aceh,,,2.86,Baik,,16.34,66.99,15.32,68.75,25.06,153.3659730722154,62.93,49.23,36.0
+Pemerintah Kab. Aceh Besar,Kabupaten,Aceh,,,2.39,Cukup,,14.05,73.58,13.21,75.13,60.26,428.89679715302486,62.93,49.23,47.55
+Pemerintah Kab. Aceh Jaya,Kabupaten,Aceh,,,2.67,Baik,,13.23,69.84,12.25,71.83,12.63,95.46485260770976,62.93,49.23,
+Pemerintah Kab. Aceh Selatan,Kabupaten,Aceh,,,2.75,Baik,,13.18,67.44,12.02,69.1,32.25,244.6889226100152,62.93,49.23,39.68
+Pemerintah Kab. Aceh Singkil,Kabupaten,Aceh,1.95,Cukup,2.28,Cukup,0.33,20.36,69.22,19.06,70.75,25.48,125.14734774066798,62.93,49.23,51.11
+Pemerintah Kab. Aceh Tamiang,Kabupaten,Aceh,2.62,Baik,2.86,Baik,0.24,13.34,69.48,12.17,72.32,40.03,300.0749625187407,62.93,49.23,55.9
+Pemerintah Kab. Aceh Tengah,Kabupaten,Aceh,,,2.48,Cukup,,15.26,73.37,14.27,75.41,32.72,214.4167758846658,62.93,49.23,42.12
+Pemerintah Kab. Aceh Tenggara,Kabupaten,Aceh,,,2.29,Cukup,,13.41,69.44,11.99,71.7,29.31,218.5682326621924,62.93,49.23,12.1
+Pemerintah Kab. Aceh Timur,Kabupaten,Aceh,2.25,Cukup,2.38,Cukup,0.13,14.45,67.83,13.26,69.87,63.69,440.7612456747405,62.93,49.23,42.72
+Pemerintah Kab. Aceh Utara,Kabupaten,Aceh,,,1.44,Kurang,,17.43,69.46,16.11,71.7,109.49,628.1698221457257,62.93,49.23,38.6
+Pemerintah Kab. Bener Meriah,Kabupaten,Aceh,2.2,Cukup,2.66,Baik,0.46,19.16,73.27,18.18,75.01,28.69,149.73903966597078,62.93,49.23,39.25
+Pemerintah Kab. Bireuen,Kabupaten,Aceh,2.06,Cukup,2.32,Cukup,0.26,13.25,72.33,12.1,74.45,63.02,475.622641509434,62.93,49.23,49.51
+Pemerintah Kab. Gayo Lues,Kabupaten,Aceh,,,2.69,Baik,,19.64,67.56,18.3,69.83,18.61,94.75560081466394,62.93,49.23,47.21
+Pemerintah Kab. Nagan Raya,Kabupaten,Aceh,1.76,Kurang,2.94,Baik,1.18,18.23,69.31,16.94,71.72,30.71,168.4585847504114,62.93,49.23,44.68
+Pemerintah Kab. Pidie,Kabupaten,Aceh,,,2.25,Cukup,,19.59,70.7,18.59,72.31,88.53,451.9142419601838,62.93,49.23,54.96
+Pemerintah Kab. Pidie Jaya,Kabupaten,Aceh,,,2.61,Baik,,19.55,73.6,18.28,75.16,31.79,162.6086956521739,62.93,49.23,
+Pemerintah Kota Banda Aceh,Kota,Aceh,2.62,Baik,3.7,Sangat Baik,1.08,7.61,85.71,6.95,87.17,20.95,275.2956636005256,62.93,49.23,35.42
+Pemerintah Kota Langsa,Kota,Aceh,1.98,Cukup,1.95,Cukup,-0.03,10.96,77.44,10.33,78.81,19.78,180.4744525547445,62.93,49.23,50.78
+Pemerintah Kota Lhokseumawe,Kota,Aceh,1.54,Kurang,2.8,Baik,1.26,11.16,77.57,10.44,79.55,23.38,209.49820788530465,62.93,49.23,43.66
+Pemerintah Kota Sabang,Kota,Aceh,1.53,Kurang,3.02,Baik,1.49,15.32,76.11,14.58,78.32,5.33,34.7911227154047,62.93,49.23,37.83
+Pemerintah Kota Subulussalam,Kota,Aceh,1.0,Kurang,2.48,Cukup,1.48,17.65,65.27,16.38,68.04,14.46,81.92634560906517,62.93,49.23,43.88
+Pemerintah Kab. Badung,Kabupaten,Bali,1.78,Kurang,3.87,Sangat Baik,2.09,2.62,81.83,2.23,83.87,18.52,706.8702290076335,77.56,67.75,62.9
+Pemerintah Kab. Bangli,Kabupaten,Bali,2.28,Cukup,2.71,Baik,0.43,5.09,69.37,5.06,71.34,11.68,229.46954813359528,77.56,67.75,63.33
+Pemerintah Kab. Buleleng,Kabupaten,Bali,2.3,Cukup,3.69,Sangat Baik,1.39,6.12,72.56,5.39,74.52,40.92,668.6274509803922,77.56,67.75,60.98
+Pemerintah Kab. Gianyar,Kabupaten,Bali,2.73,Baik,3.49,Baik,0.76,4.85,77.7,4.0,79.82,25.36,522.8865979381444,77.56,67.75,50.96
+Pemerintah Kab. Jembrana,Kabupaten,Bali,2.83,Baik,3.77,Sangat Baik,0.94,5.06,72.75,4.51,74.6,14.24,281.4229249011857,77.56,67.75,59.93
+Pemerintah Kab. Karangasem,Kabupaten,Bali,2.43,Cukup,2.57,Cukup,0.14,6.78,67.36,6.52,69.74,28.52,420.6489675516224,77.56,67.75,58.3
+Pemerintah Kab. Klungkung,Kabupaten,Bali,3.01,Baik,3.14,Baik,0.13,5.64,71.75,5.3,74.04,10.19,180.67375886524823,77.56,67.75,67.75
+Pemerintah Kab. Tabanan,Kabupaten,Bali,2.07,Cukup,3.54,Sangat Baik,1.47,5.12,76.45,4.4,78.42,23.11,451.3671875,77.56,67.75,57.45
+Pemerintah Kota Denpasar,Kota,Bali,3.19,Baik,3.96,Sangat Baik,0.77,2.96,84.03,2.59,85.22,29.41,993.581081081081,77.56,67.75,71.17
+Pemerintah Provinsi Bali,Provinsi,Bali,3.68,Sangat Baik,4.3,Memuaskan,0.62,4.53,75.69,4.0,77.76,201.97,4458.498896247241,77.56,67.75,69.92
+Pemerintah Kab. Lebak,Kabupaten,Banten,2.86,Baik,3.52,Sangat Baik,0.66,10.29,64.03,8.44,65.86,134.75,1309.5238095238096,75.17,67.14,45.5
+Pemerintah Kab. Pandeglang,Kabupaten,Banten,1.95,Cukup,3.45,Baik,1.5,10.72,65.17,9.18,66.99,131.43,1226.0261194029852,75.17,67.14,4.3
+Pemerintah Kab. Serang,Kabupaten,Banten,2.64,Baik,3.73,Sangat Baik,1.09,5.49,66.82,4.51,69.03,83.09,1513.479052823315,75.17,67.14,36.9
+Pemerintah Kab. Tangerang,Kabupaten,Banten,2.99,Baik,3.91,Sangat Baik,0.92,7.12,72.29,6.55,74.09,272.35,3825.140449438202,75.17,67.14,63.15
+Pemerintah Kota Cilegon,Kota,Banten,2.03,Cukup,2.56,Cukup,0.53,4.24,73.35,3.75,75.14,18.89,445.5188679245283,75.17,67.14,42.49
+Pemerintah Kota Serang,Kota,Banten,2.97,Baik,2.61,Baik,-0.36,6.79,72.44,5.65,73.99,47.91,705.5964653902797,75.17,67.14,57.12
+Pemerintah Kota Tangerang,Kota,Banten,3.4,Baik,3.85,Sangat Baik,0.45,5.93,78.5,5.43,80.02,134.24,2263.743676222597,75.17,67.14,65.5
+Pemerintah Kota Tangerang Selatan,Kota,Banten,2.48,Cukup,3.48,Baik,1.0,2.57,81.6,2.36,82.89,44.57,1734.241245136187,75.17,67.14,50.45
+Pemerintah Provinsi Banten,Provinsi,Banten,3.15,Baik,3.47,Baik,0.32,6.66,72.72,5.84,74.48,867.23,13021.47147147147,75.17,67.14,45.57
+Pemerintah Kab. Bengkulu Selatan,Kabupaten,Bengkulu,1.96,Cukup,2.87,Baik,0.91,18.16,70.75,17.1,72.35,31.65,174.284140969163,70.72,54.97,54.34
+Pemerintah Kab. Bengkulu Tengah,Kabupaten,Bengkulu,1.29,Kurang,2.84,Baik,1.55,9.68,67.96,10.14,69.84,11.12,114.87603305785125,70.72,54.97,42.04
+Pemerintah Kab. Bengkulu Utara,Kabupaten,Bengkulu,1.44,Kurang,3.28,Baik,1.84,11.61,69.28,10.96,71.11,35.55,306.2015503875969,70.72,54.97,55.39
+Pemerintah Kab. Kaur,Kabupaten,Bengkulu,,,2.42,Cukup,,18.62,67.17,17.12,68.98,22.99,123.46938775510203,70.72,54.97,40.45
+Pemerintah Kab. Kepahiang,Kabupaten,Bengkulu,1.94,Cukup,2.47,Cukup,0.53,14.83,68.62,12.9,70.27,20.94,141.2002697235334,70.72,54.97,39.68
+Pemerintah Kab. Lebong,Kabupaten,Bengkulu,1.55,Kurang,3.38,Baik,1.83,12.0,67.46,10.45,69.27,13.97,116.41666666666669,70.72,54.97,38.26
+Pemerintah Kab. Mukomuko,Kabupaten,Bengkulu,1.74,Kurang,2.07,Cukup,0.33,11.93,68.64,10.76,70.63,22.5,188.60016764459343,70.72,54.97,23.16
+Pemerintah Kab. Rejang Lebong,Kabupaten,Bengkulu,1.84,Cukup,3.24,Baik,1.4,15.85,70.77,14.65,72.92,43.3,273.186119873817,70.72,54.97,47.67
+Pemerintah Kab. Seluma,Kabupaten,Bengkulu,1.41,Kurang,2.26,Cukup,0.85,18.72,67.03,17.23,68.97,37.05,197.91666666666669,70.72,54.97,51.64
+Pemerintah Kota Bengkulu,Kota,Bengkulu,1.68,Kurang,2.63,Baik,0.95,17.89,80.54,13.76,82.04,66.94,374.1755170486305,70.72,54.97,
+Pemerintah Provinsi Bengkulu,Provinsi,Bengkulu,2.79,Baik,3.92,Sangat Baik,1.13,15.22,71.64,13.56,73.39,306.0,2010.5124835742445,70.72,54.97,53.39
+Pemerintah D.I. Yogyakarta,Provinsi,D.I. Yogyakarta,3.49,Baik,4.53,Memuaskan,1.04,12.8,80.22,10.83,81.55,506.45,3956.640625,80.1,74.0,51.44
+Pemerintah Kab. Bantul,Kabupaten,D.I. Yogyakarta,3.62,Sangat Baik,4.18,Sangat Baik,0.56,14.04,80.28,11.66,81.74,146.98,1046.8660968660968,80.1,74.0,71.3
+Pemerintah Kab. Gunungkidul,Kabupaten,D.I. Yogyakarta,2.49,Cukup,3.96,Sangat Baik,1.47,17.69,70.16,15.18,71.89,135.33,765.008479366874,80.1,74.0,46.6
+Pemerintah Kab. Kulon Progo,Kabupaten,D.I. Yogyakarta,3.22,Baik,3.91,Sangat Baik,0.69,18.38,74.71,15.62,76.14,81.14,441.4581066376496,80.1,74.0,54.68
+Pemerintah Kab. Sleman,Kabupaten,D.I. Yogyakarta,2.55,Cukup,4.3,Memuaskan,1.75,8.64,84.0,7.46,85.61,108.93,1260.763888888889,80.1,74.0,62.82
+Pemerintah Kota Yogyakarta,Kota,D.I. Yogyakarta,2.98,Baik,3.5,Sangat Baik,0.52,7.69,87.18,6.26,88.77,34.07,443.0429128738621,80.1,74.0,62.38
+Pemerintah Provinsi DK Jakarta,Provinsi,DKI Jakarta,3.47,Baik,4.46,Memuaskan,0.99,4.72,81.11,4.3,83.08,501.92,10633.898305084746,87.84,85.55,80.18
+Pemerintah Kab. Boalemo,Kabupaten,Gorontalo,,,2.4,Cukup,,19.0,66.42,17.83,68.74,31.83,167.52631578947367,65.92,56.03,51.84
+Pemerintah Kab. Bone Bolango,Kabupaten,Gorontalo,2.02,Cukup,3.0,Baik,0.98,16.3,70.25,14.8,72.38,25.76,158.03680981595093,65.92,56.03,1.2
+Pemerintah Kab. Gorontalo,Kabupaten,Gorontalo,1.31,Kurang,2.68,Baik,1.37,17.89,67.34,16.43,69.66,67.21,375.684740078256,65.92,56.03,49.18
+Pemerintah Kab. Gorontalo Utara,Kabupaten,Gorontalo,,,2.89,Baik,,17.23,65.21,16.86,67.46,19.34,112.2460824143935,65.92,56.03,46.67
+Pemerintah Kab. Pohuwato,Kabupaten,Gorontalo,,,2.52,Cukup,,18.08,65.8,17.11,68.02,29.22,161.6150442477876,65.92,56.03,44.71
+Pemerintah Kota Gorontalo,Kota,Gorontalo,1.9,Cukup,2.82,Baik,0.92,5.93,77.41,5.74,79.18,12.94,218.212478920742,65.92,56.03,46.28
+Pemerintah Provinsi Gorontalo,Provinsi,Gorontalo,2.51,Cukup,4.13,Sangat Baik,1.62,15.61,69.0,14.57,71.23,186.29,1193.4016655989751,65.92,56.03,34.68
+Pemerintah Kab. Batang Hari,Kabupaten,Jambi,2.03,Cukup,3.55,Sangat Baik,1.52,10.05,70.11,8.63,71.67,27.24,271.04477611940297,71.76,56.07,36.25
+Pemerintah Kab. Bungo,Kabupaten,Jambi,1.46,Kurang,2.71,Baik,1.25,6.23,70.15,5.06,71.92,23.64,379.45425361155696,71.76,56.07,39.66
+Pemerintah Kab. Kerinci,Kabupaten,Jambi,1.56,Kurang,2.18,Cukup,0.62,7.71,71.45,6.93,73.11,18.45,239.2996108949416,71.76,56.07,56.99
+Pemerintah Kab. Merangin,Kabupaten,Jambi,1.0,Kurang,3.2,Baik,2.2,9.11,69.53,8.4,71.66,35.44,389.0230515916575,71.76,56.07,36.18
+Pemerintah Kab. Muaro Jambi,Kabupaten,Jambi,2.18,Cukup,2.62,Baik,0.44,4.53,69.55,3.65,71.91,20.49,452.317880794702,71.76,56.07,15.9
+Pemerintah Kab. Sarolangun,Kabupaten,Jambi,2.27,Cukup,3.1,Baik,0.83,8.87,70.25,8.36,72.01,27.06,305.0732807215333,71.76,56.07,35.04
+Pemerintah Kab. Tanjung Jabung Barat,Kabupaten,Jambi,1.1,Kurang,2.92,Baik,1.82,10.75,68.16,9.54,69.93,36.1,335.81395348837214,71.76,56.07,38.17
+Pemerintah Kab. Tanjung Jabung Timur,Kabupaten,Jambi,1.16,Kurang,2.83,Baik,1.67,11.39,64.91,10.14,67.54,24.42,214.3985952589992,71.76,56.07,46.1
+Pemerintah Kab. Tebo,Kabupaten,Jambi,1.97,Cukup,2.62,Baik,0.65,6.68,69.35,6.12,71.32,23.77,355.8383233532934,71.76,56.07,34.86
+Pemerintah Kota Jambi,Kota,Jambi,1.69,Kurang,4.32,Memuaskan,2.63,9.02,79.12,7.73,81.04,54.23,601.2195121951219,71.76,56.07,67.71
+Pemerintah Kota Sungai Penuh,Kota,Jambi,1.44,Kurang,3.14,Baik,1.7,3.41,75.7,2.92,77.4,3.03,88.85630498533725,71.76,56.07,53.6
+Pemerintah Provinsi Jambi,Provinsi,Jambi,2.21,Cukup,3.05,Baik,0.84,8.09,71.63,7.1,73.43,293.86,3632.38566131026,71.76,56.07,58.59
+Pemerintah Kab. Bandung,Kabupaten,Jawa Barat,2.98,Baik,3.98,Sangat Baik,1.0,7.15,72.73,6.19,74.27,269.18,3764.755244755244,76.62,68.37,65.89
+Pemerintah Kab. Bandung Barat,Kabupaten,Jawa Barat,2.85,Baik,3.78,Sangat Baik,0.93,11.3,68.29,10.49,70.03,190.77,1688.2300884955753,76.62,68.37,42.02
+Pemerintah Kab. Bekasi,Kabupaten,Jawa Barat,1.6,Kurang,4.08,Sangat Baik,2.48,5.21,74.45,4.8,76.44,202.73,3891.170825335893,76.62,68.37,55.07
+Pemerintah Kab. Bogor,Kabupaten,Jawa Barat,2.72,Baik,4.1,Sangat Baik,1.38,8.13,70.6,7.05,72.39,491.24,6042.312423124231,76.62,68.37,88.21
+Pemerintah Kab. Ciamis,Kabupaten,Jawa Barat,3.32,Baik,3.65,Sangat Baik,0.33,7.97,70.93,7.39,72.56,96.6,1212.0451693851944,76.62,68.37,
+Pemerintah Kab. Cianjur,Kabupaten,Jawa Barat,2.46,Cukup,3.75,Sangat Baik,1.29,11.18,65.56,10.14,67.24,260.02,2325.7602862254025,76.62,68.37,48.52
+Pemerintah Kab. Cirebon,Kabupaten,Jawa Barat,1.91,Cukup,3.61,Sangat Baik,1.7,12.3,69.12,11.0,71.44,271.02,2203.414634146341,76.62,68.37,53.91
+Pemerintah Kab. Garut,Kabupaten,Jawa Barat,3.25,Baik,3.89,Sangat Baik,0.64,10.65,66.45,9.68,68.79,281.36,2641.8779342723005,76.62,68.37,52.16
+Pemerintah Kab. Indramayu,Kabupaten,Jawa Barat,2.57,Cukup,3.93,Sangat Baik,1.36,13.04,67.64,11.93,69.83,228.59,1752.9907975460123,76.62,68.37,46.37
+Pemerintah Kab. Karawang,Kabupaten,Jawa Barat,3.39,Baik,4.4,Memuaskan,1.01,8.95,70.94,7.86,72.9,210.78,2355.083798882681,76.62,68.37,57.38
+Pemerintah Kab. Kuningan,Kabupaten,Jawa Barat,2.24,Cukup,3.57,Sangat Baik,1.33,13.1,69.71,11.88,71.26,143.35,1094.2748091603053,76.62,68.37,29.82
+Pemerintah Kab. Majalengka,Kabupaten,Jawa Barat,2.82,Baik,2.94,Baik,0.12,12.33,67.81,10.82,69.74,151.14,1225.790754257907,76.62,68.37,55.15
+Pemerintah Kab. Pangandaran,Kabupaten,Jawa Barat,2.38,Cukup,3.56,Sangat Baik,1.18,9.65,68.28,8.75,69.85,39.07,404.8704663212435,76.62,68.37,48.03
+Pemerintah Kab. Purwakarta,Kabupaten,Jawa Barat,2.37,Cukup,3.94,Sangat Baik,1.57,8.83,70.98,8.41,72.65,84.27,954.3601359003396,76.62,68.37,48.92
+Pemerintah Kab. Subang,Kabupaten,Jawa Barat,2.44,Cukup,3.38,Baik,0.94,10.03,69.13,9.49,71.36,158.97,1584.9451645064803,76.62,68.37,52.65
+Pemerintah Kab. Sukabumi,Kabupaten,Jawa Barat,1.56,Kurang,3.95,Sangat Baik,2.39,7.7,67.07,6.87,68.97,194.35,2524.025974025974,76.62,68.37,64.82
+Pemerintah Kab. Sumedang,Kabupaten,Jawa Barat,3.52,Sangat Baik,4.51,Memuaskan,0.99,10.71,71.8,9.1,73.73,126.28,1179.0849673202613,76.62,68.37,73.23
+Pemerintah Kab. Tasikmalaya,Kabupaten,Jawa Barat,2.05,Cukup,3.76,Sangat Baik,1.71,11.15,65.9,10.23,68.36,200.59,1799.013452914798,76.62,68.37,47.59
+Pemerintah Kota Bandung,Kota,Jawa Barat,3.19,Baik,4.59,Memuaskan,1.4,4.37,81.96,3.87,83.52,112.5,2574.370709382151,76.62,68.37,57.15
+Pemerintah Kota Banjar,Kota,Jawa Barat,2.72,Baik,3.58,Sangat Baik,0.86,7.11,71.92,5.85,73.64,13.37,188.0450070323488,76.62,68.37,
+Pemerintah Kota Bekasi,Kota,Jawa Barat,2.94,Baik,3.83,Sangat Baik,0.89,4.74,81.95,4.01,83.54,144.12,3040.506329113924,76.62,68.37,80.94
+Pemerintah Kota Bogor,Kota,Jawa Barat,3.11,Baik,4.08,Sangat Baik,0.97,7.24,76.59,6.53,78.52,80.09,1106.2154696132595,76.62,68.37,57.04
+Pemerintah Kota Cimahi,Kota,Jawa Barat,2.75,Baik,4.15,Sangat Baik,1.4,5.35,78.06,4.39,80.08,32.48,607.1028037383177,76.62,68.37,69.7
+Pemerintah Kota Cirebon,Kota,Jawa Barat,2.83,Baik,4.13,Sangat Baik,1.3,10.03,75.25,9.02,77.08,31.98,318.8434695912263,76.62,68.37,53.24
+Pemerintah Kota Depok,Kota,Jawa Barat,2.99,Baik,4.32,Memuaskan,1.33,2.58,81.37,2.34,82.91,63.86,2475.1937984496126,76.62,68.37,54.5
+Pemerintah Kota Sukabumi,Kota,Jawa Barat,2.98,Baik,3.79,Sangat Baik,0.81,8.25,74.6,7.2,76.85,27.19,329.5757575757576,76.62,68.37,76.84
+Pemerintah Kota Tasikmalaya,Kota,Jawa Barat,2.68,Baik,3.96,Sangat Baik,1.28,13.13,73.31,11.1,75.04,89.46,681.3404417364812,76.62,68.37,49.36
+Pemerintah Provinsi Jawa Barat,Provinsi,Jawa Barat,3.28,Baik,4.73,Memuaskan,1.45,8.4,72.45,7.46,74.43,4195.34,49944.52380952381,76.62,68.37,81.27
+Pemerintah Kab. Banjarnegara,Kabupaten,Jawa Tengah,2.42,Cukup,3.72,Sangat Baik,1.3,16.23,67.86,14.71,69.6,150.19,925.3850893407272,73.15,62.2,46.88
+Pemerintah Kab. Banyumas,Kabupaten,Jawa Tengah,2.73,Baik,4.09,Sangat Baik,1.36,13.66,72.44,11.95,74.52,232.91,1705.051244509517,73.15,62.2,53.56
+Pemerintah Kab. Batang,Kabupaten,Jawa Tengah,3.24,Baik,3.55,Sangat Baik,0.31,9.68,68.92,8.73,70.74,74.91,773.8636363636364,73.15,62.2,57.46
+Pemerintah Kab. Blora,Kabupaten,Jawa Tengah,2.8,Baik,3.28,Baik,0.48,12.39,69.37,11.42,71.39,107.05,864.003228410008,73.15,62.2,82.61
+Pemerintah Kab. Boyolali,Kabupaten,Jawa Tengah,2.82,Baik,3.89,Sangat Baik,1.07,10.62,74.4,9.63,75.96,104.82,987.0056497175142,73.15,62.2,83.64
+Pemerintah Kab. Brebes,Kabupaten,Jawa Tengah,2.34,Cukup,2.84,Baik,0.5,17.43,66.32,15.6,68.46,314.95,1806.9420539300056,73.15,62.2,59.33
+Pemerintah Kab. Cilacap,Kabupaten,Jawa Tengah,2.81,Baik,3.27,Baik,0.46,11.67,70.42,10.68,72.38,201.71,1728.4490145672669,73.15,62.2,60.72
+Pemerintah Kab. Demak,Kabupaten,Jawa Tengah,3.19,Baik,3.93,Sangat Baik,0.74,12.92,72.57,11.89,74.57,151.74,1174.4582043343653,73.15,62.2,55.67
+Pemerintah Kab. Grobogan,Kabupaten,Jawa Tengah,2.51,Cukup,3.57,Sangat Baik,1.06,12.74,70.41,11.43,72.02,175.72,1379.2778649921506,73.15,62.2,65.48
+Pemerintah Kab. Jepara,Kabupaten,Jawa Tengah,3.04,Baik,3.51,Sangat Baik,0.47,7.44,72.36,6.09,74.32,95.22,1279.8387096774193,73.15,62.2,50.4
+Pemerintah Kab. Karanganyar,Kabupaten,Jawa Tengah,2.4,Cukup,3.9,Sangat Baik,1.5,10.68,75.99,9.59,78.11,95.41,893.3520599250936,73.15,62.2,58.35
+Pemerintah Kab. Kebumen,Kabupaten,Jawa Tengah,3.05,Baik,4.07,Sangat Baik,1.02,17.83,70.05,15.71,71.93,212.92,1194.1671340437465,73.15,62.2,52.98
+Pemerintah Kab. Kendal,Kabupaten,Jawa Tengah,3.27,Baik,3.66,Sangat Baik,0.39,10.24,72.5,9.35,74.34,100.0,976.5625,73.15,62.2,52.27
+Pemerintah Kab. Klaten,Kabupaten,Jawa Tengah,2.74,Baik,4.07,Sangat Baik,1.33,13.49,76.12,12.04,78.16,158.23,1172.9429206819866,73.15,62.2,67.89
+Pemerintah Kab. Kudus,Kabupaten,Jawa Tengah,2.53,Cukup,4.23,Memuaskan,1.7,7.6,75.16,7.23,77.22,67.06,882.3684210526317,73.15,62.2,58.14
+Pemerintah Kab. Magelang,Kabupaten,Jawa Tengah,2.67,Baik,3.92,Sangat Baik,1.25,11.91,70.12,10.83,71.99,154.91,1300.671704450042,73.15,62.2,63.96
+Pemerintah Kab. Pati,Kabupaten,Jawa Tengah,2.75,Baik,3.75,Sangat Baik,1.0,10.21,72.28,9.17,74.1,128.74,1260.920666013712,73.15,62.2,78.4
+Pemerintah Kab. Pekalongan,Kabupaten,Jawa Tengah,2.63,Baik,3.05,Baik,0.42,10.57,70.11,8.95,71.84,95.26,901.2298959318828,73.15,62.2,46.66
+Pemerintah Kab. Pemalang,Kabupaten,Jawa Tengah,2.49,Cukup,3.04,Baik,0.55,16.56,66.56,14.92,68.55,215.08,1298.792270531401,73.15,62.2,48.61
+Pemerintah Kab. Purbalingga,Kabupaten,Jawa Tengah,2.23,Cukup,3.93,Sangat Baik,1.7,16.24,69.15,14.18,70.69,153.08,942.6108374384238,73.15,62.2,53.45
+Pemerintah Kab. Purworejo,Kabupaten,Jawa Tengah,2.34,Cukup,3.49,Baik,1.15,12.4,72.98,10.87,75.11,88.8,716.1290322580645,73.15,62.2,
+Pemerintah Kab. Rembang,Kabupaten,Jawa Tengah,2.76,Baik,3.99,Sangat Baik,1.23,15.8,70.43,14.02,72.53,101.4,641.7721518987343,73.15,62.2,47.73
+Pemerintah Kab. Semarang,Kabupaten,Jawa Tengah,2.36,Cukup,3.31,Baik,0.95,7.82,74.24,6.96,75.67,83.61,1069.1815856777494,73.15,62.2,53.29
+Pemerintah Kab. Sragen,Kabupaten,Jawa Tengah,3.03,Baik,4.34,Memuaskan,1.31,13.83,74.08,12.41,75.53,122.91,888.7201735357917,73.15,62.2,93.98
+Pemerintah Kab. Sukoharjo,Kabupaten,Jawa Tengah,2.93,Baik,4.45,Memuaskan,1.52,8.23,77.13,7.47,79.3,73.84,897.2053462940462,73.15,62.2,
+Pemerintah Kab. Tegal,Kabupaten,Jawa Tengah,2.55,Cukup,3.16,Baik,0.61,8.6,68.79,6.81,70.77,123.52,1436.279069767442,73.15,62.2,67.8
+Pemerintah Kab. Temanggung,Kabupaten,Jawa Tengah,2.78,Baik,3.64,Sangat Baik,0.86,10.17,69.88,8.67,71.87,79.09,777.6794493608653,73.15,62.2,72.42
+Pemerintah Kab. Wonogiri,Kabupaten,Jawa Tengah,2.8,Baik,4.2,Memuaskan,1.4,11.55,70.49,10.71,72.55,110.46,956.3636363636364,73.15,62.2,90.2
+Pemerintah Kab. Wonosobo,Kabupaten,Jawa Tengah,2.32,Cukup,3.79,Sangat Baik,1.47,17.67,68.43,15.28,69.82,139.67,790.4357668364457,73.15,62.2,56.76
+Pemerintah Kota Magelang,Kota,Jawa Tengah,2.71,Baik,3.69,Sangat Baik,0.98,7.75,79.43,5.94,82.15,9.44,121.80645161290322,73.15,62.2,71.87
+Pemerintah Kota Pekalongan,Kota,Jawa Tengah,2.82,Baik,3.76,Sangat Baik,0.94,7.59,75.4,6.71,77.22,23.49,309.4861660079051,73.15,62.2,77.07
+Pemerintah Kota Salatiga,Kota,Jawa Tengah,2.34,Cukup,3.64,Sangat Baik,1.3,5.14,83.6,4.57,85.72,10.14,197.2762645914397,73.15,62.2,51.1
+Pemerintah Kota Semarang,Kota,Jawa Tengah,2.98,Baik,3.95,Sangat Baik,0.97,4.56,83.55,4.03,85.25,84.45,1851.9736842105267,73.15,62.2,67.92
+Pemerintah Kota Surakarta,Kota,Jawa Tengah,2.75,Baik,4.3,Memuaskan,1.55,9.4,82.62,8.31,84.4,48.79,519.0425531914893,73.15,62.2,67.47
+Pemerintah Kota Tegal,Kota,Jawa Tengah,2.39,Cukup,3.95,Sangat Baik,1.56,8.12,75.52,7.64,77.43,20.27,249.6305418719212,73.15,62.2,54.62
+Pemerintah Provinsi Jawa Tengah,Provinsi,Jawa Tengah,2.74,Baik,4.42,Memuaskan,1.68,11.79,72.16,10.47,73.88,4109.75,34857.93044953351,73.15,62.2,72.85
+Pemerintah Kab. Bangkalan,Kabupaten,Jawa Timur,1.62,Kurang,2.92,Baik,1.3,21.57,64.36,18.66,66.27,215.97,1001.2517385257302,69.36,59.34,82.37
+Pemerintah Kab. Banyuwangi,Kabupaten,Jawa Timur,3.53,Sangat Baik,4.77,Memuaskan,1.24,8.07,71.38,6.54,73.11,130.93,1622.4287484510533,69.36,59.34,98.86
+Pemerintah Kab. Blitar,Kabupaten,Jawa Timur,2.76,Baik,3.77,Sangat Baik,1.01,9.65,71.05,8.16,73.09,112.62,1167.0466321243523,69.36,59.34,72.59
+Pemerintah Kab. Bojonegoro,Kabupaten,Jawa Timur,2.45,Cukup,4.14,Sangat Baik,1.69,13.27,69.59,11.69,71.78,166.52,1254.8605877920122,69.36,59.34,
+Pemerintah Kab. Bondowoso,Kabupaten,Jawa Timur,2.25,Cukup,3.86,Sangat Baik,1.61,14.73,66.59,12.6,68.65,115.18,781.9416157501697,69.36,59.34,56.84
+Pemerintah Kab. Gresik,Kabupaten,Jawa Timur,3.31,Baik,4.32,Memuaskan,1.01,12.42,76.5,10.32,78.45,166.35,1339.3719806763283,69.36,59.34,54.43
+Pemerintah Kab. Jember,Kabupaten,Jawa Timur,1.96,Cukup,3.54,Sangat Baik,1.58,10.41,67.32,9.01,69.15,257.09,2469.6445725264166,69.36,59.34,71.09
+Pemerintah Kab. Jombang,Kabupaten,Jawa Timur,2.51,Cukup,3.91,Sangat Baik,1.4,10.0,73.45,8.6,75.1,127.3,1273.0,69.36,59.34,59.4
+Pemerintah Kab. Kediri,Kabupaten,Jawa Timur,3.12,Baik,4.63,Memuaskan,1.51,11.64,72.56,9.95,74.44,184.49,1584.9656357388317,69.36,59.34,46.62
+Pemerintah Kab. Lamongan,Kabupaten,Jawa Timur,3.32,Baik,4.18,Sangat Baik,0.86,13.86,73.12,12.16,75.13,166.82,1203.6075036075035,69.36,59.34,78.2
+Pemerintah Kab. Lumajang,Kabupaten,Jawa Timur,2.56,Cukup,3.39,Baik,0.83,10.05,66.07,8.65,68.8,105.25,1047.2636815920398,69.36,59.34,58.0
+Pemerintah Kab. Madiun,Kabupaten,Jawa Timur,3.21,Baik,4.31,Memuaskan,1.1,11.91,71.88,10.63,73.74,81.61,685.2225020990765,69.36,59.34,50.75
+Pemerintah Kab. Magetan,Kabupaten,Jawa Timur,2.56,Cukup,2.92,Baik,0.36,10.66,74.15,9.32,75.87,67.75,635.5534709193246,69.36,59.34,49.73
+Pemerintah Kab. Malang,Kabupaten,Jawa Timur,2.25,Cukup,3.74,Sangat Baik,1.49,10.5,70.6,8.98,72.68,276.58,2634.095238095238,69.36,59.34,67.2
+Pemerintah Kab. Mojokerto,Kabupaten,Jawa Timur,2.71,Baik,4.16,Sangat Baik,1.45,10.62,74.15,9.37,75.98,120.54,1135.0282485875707,69.36,59.34,
+Pemerintah Kab. Nganjuk,Kabupaten,Jawa Timur,2.14,Cukup,3.84,Sangat Baik,1.7,11.85,71.97,10.17,74.23,125.53,1059.324894514768,69.36,59.34,57.28
+Pemerintah Kab. Ngawi,Kabupaten,Jawa Timur,2.65,Baik,3.61,Sangat Baik,0.96,15.57,71.04,13.81,73.09,130.81,840.1412973667309,69.36,59.34,73.96
+Pemerintah Kab. Pacitan,Kabupaten,Jawa Timur,1.41,Kurang,3.5,Baik,2.09,15.11,68.57,13.08,70.74,84.19,557.1806750496361,69.36,59.34,45.16
+Pemerintah Kab. Pamekasan,Kabupaten,Jawa Timur,2.12,Cukup,3.92,Sangat Baik,1.8,15.3,66.4,13.41,68.49,137.12,896.2091503267974,69.36,59.34,76.35
+Pemerintah Kab. Pasuruan,Kabupaten,Jawa Timur,2.39,Cukup,3.88,Sangat Baik,1.49,9.7,68.93,8.63,70.73,159.78,1647.216494845361,69.36,59.34,67.7
+Pemerintah Kab. Ponorogo,Kabupaten,Jawa Timur,2.59,Cukup,3.07,Baik,0.48,10.26,71.06,9.11,73.01,89.94,876.6081871345029,69.36,59.34,53.68
+Pemerintah Kab. Probolinggo,Kabupaten,Jawa Timur,2.59,Cukup,3.97,Sangat Baik,1.38,18.91,66.26,16.45,68.29,223.32,1180.962453728186,69.36,59.34,48.55
+Pemerintah Kab. Sampang,Kabupaten,Jawa Timur,2.98,Baik,3.67,Sangat Baik,0.69,23.76,62.8,20.83,64.65,237.23,998.4427609427609,69.36,59.34,88.17
+Pemerintah Kab. Sidoarjo,Kabupaten,Jawa Timur,2.37,Cukup,3.96,Sangat Baik,1.59,5.93,80.65,4.53,82.31,137.15,2312.816188870152,69.36,59.34,75.96
+Pemerintah Kab. Situbondo,Kabupaten,Jawa Timur,2.43,Cukup,4.21,Memuaskan,1.78,12.63,67.78,11.51,69.75,86.95,688.4402216943785,69.36,59.34,94.13
+Pemerintah Kab. Sumenep,Kabupaten,Jawa Timur,2.38,Cukup,3.73,Sangat Baik,1.35,20.51,67.04,17.78,69.26,224.73,1095.709410043881,69.36,59.34,42.1
+Pemerintah Kab. Trenggalek,Kabupaten,Jawa Timur,2.58,Cukup,4.22,Memuaskan,1.64,12.14,70.06,10.5,72.24,84.89,699.2586490939044,69.36,59.34,69.98
+Pemerintah Kab. Tuban,Kabupaten,Jawa Timur,2.35,Cukup,4.24,Memuaskan,1.89,16.31,68.91,14.36,71.23,192.58,1180.7480073574495,69.36,59.34,55.6
+Pemerintah Kab. Tulungagung,Kabupaten,Jawa Timur,2.39,Cukup,3.78,Sangat Baik,1.39,7.51,73.15,6.28,75.09,78.59,1046.4713715046605,69.36,59.34,59.14
+Pemerintah Kota Batu,Kota,Jawa Timur,2.56,Cukup,3.57,Sangat Baik,1.01,4.09,76.28,3.06,78.79,8.63,211.00244498777508,69.36,59.34,74.74
+Pemerintah Kota Blitar,Kota,Jawa Timur,3.19,Baik,4.11,Sangat Baik,0.92,7.89,78.98,6.75,81.27,11.33,143.59949302915084,69.36,59.34,48.04
+Pemerintah Kota Kediri,Kota,Jawa Timur,3.06,Baik,3.89,Sangat Baik,0.83,7.75,78.6,6.51,81.35,22.55,290.9677419354839,69.36,59.34,51.52
+Pemerintah Kota Madiun,Kota,Jawa Timur,3.06,Baik,4.57,Memuaskan,1.51,5.09,81.25,4.38,83.48,9.06,177.99607072691552,69.36,59.34,67.09
+Pemerintah Kota Malang,Kota,Jawa Timur,2.73,Baik,4.24,Memuaskan,1.51,4.62,82.04,3.91,84.06,40.62,879.2207792207791,69.36,59.34,50.15
+Pemerintah Kota Mojokerto,Kota,Jawa Timur,2.92,Baik,4.32,Memuaskan,1.4,6.39,78.43,5.57,80.92,8.37,130.98591549295773,69.36,59.34,92.25
+Pemerintah Kota Pasuruan,Kota,Jawa Timur,1.83,Cukup,4.07,Sangat Baik,2.24,6.88,75.62,6.32,77.75,13.97,203.05232558139537,69.36,59.34,51.04
+Pemerintah Kota Probolinggo,Kota,Jawa Timur,2.59,Cukup,4.04,Sangat Baik,1.45,7.44,73.66,6.18,76.27,17.91,240.72580645161287,69.36,59.34,66.38
+Pemerintah Kota Surabaya,Kota,Jawa Timur,3.16,Baik,4.54,Memuaskan,1.38,5.23,82.31,3.96,84.14,152.49,2915.6787762906306,69.36,59.34,94.17
+Pemerintah Provinsi Jawa Timur,Provinsi,Jawa Timur,2.82,Baik,4.43,Memuaskan,1.61,11.4,72.14,9.79,74.09,4572.73,40111.66666666666,69.36,59.34,87.23
+Pemerintah Kab. Bengkayang,Kabupaten,Kalimantan Barat,1.76,Kurang,3.12,Baik,1.36,6.48,68.04,6.0,70.3,16.92,261.1111111111111,71.57,54.8,31.56
+Pemerintah Kab. Kapuas Hulu,Kabupaten,Kalimantan Barat,2.37,Cukup,2.82,Baik,0.45,8.93,65.75,7.4,68.58,24.03,269.09294512877943,71.57,54.8,27.09
+Pemerintah Kab. Kayong Utara,Kabupaten,Kalimantan Barat,2.06,Cukup,2.68,Baik,0.62,9.33,62.9,8.84,65.74,10.72,114.89817792068597,71.57,54.8,37.37
+Pemerintah Kab. Ketapang,Kabupaten,Kalimantan Barat,1.2,Kurang,3.06,Baik,1.86,10.13,67.43,8.5,69.42,53.04,523.5932872655478,71.57,54.8,43.11
+Pemerintah Kab. Kubu Raya,Kabupaten,Kalimantan Barat,2.3,Cukup,3.38,Baik,1.08,4.34,68.16,4.08,70.25,25.47,586.8663594470046,71.57,54.8,58.76
+Pemerintah Kab. Landak,Kabupaten,Kalimantan Barat,2.36,Cukup,2.4,Cukup,0.04,10.99,66.21,8.98,69.08,42.01,382.2565969062785,71.57,54.8,40.06
+Pemerintah Kab. Melawi,Kabupaten,Kalimantan Barat,,,2.47,Cukup,,12.01,65.87,10.62,68.66,25.47,212.0732722731057,71.57,54.8,40.59
+Pemerintah Kab. Mempawah,Kabupaten,Kalimantan Barat,2.28,Cukup,2.73,Baik,0.45,5.18,66.03,4.83,68.56,13.82,266.7953667953668,71.57,54.8,27.08
+Pemerintah Kab. Sambas,Kabupaten,Kalimantan Barat,1.69,Kurang,2.91,Baik,1.22,7.66,67.1,6.53,69.31,41.49,541.644908616188,71.57,54.8,62.37
+Pemerintah Kab. Sanggau,Kabupaten,Kalimantan Barat,2.27,Cukup,3.29,Baik,1.02,4.55,66.2,4.67,68.43,21.7,476.9230769230769,71.57,54.8,50.76
+Pemerintah Kab. Sekadau,Kabupaten,Kalimantan Barat,2.5,Cukup,3.13,Baik,0.63,6.26,64.93,5.66,67.25,12.69,202.71565495207665,71.57,54.8,45.96
+Pemerintah Kab. Sintang,Kabupaten,Kalimantan Barat,1.51,Kurang,2.3,Cukup,0.79,9.28,66.93,8.03,69.42,39.4,424.5689655172414,71.57,54.8,41.85
+Pemerintah Kota Pontianak,Kota,Kalimantan Barat,3.31,Baik,3.49,Baik,0.18,4.58,79.93,4.2,81.57,30.11,657.4235807860262,71.57,54.8,61.29
+Pemerintah Kota Singkawang,Kota,Kalimantan Barat,2.6,Baik,3.35,Baik,0.75,4.83,72.11,4.53,73.87,11.03,228.36438923395443,71.57,54.8,50.8
+Pemerintah Provinsi Kalimantan Barat,Provinsi,Kalimantan Barat,3.26,Baik,3.58,Sangat Baik,0.32,7.15,67.9,6.32,70.13,367.89,5145.3146853146845,71.57,54.8,52.93
+Pemerintah Kab. Balangan,Kabupaten,Kalimantan Selatan,1.77,Kurang,3.34,Baik,1.57,6.07,69.11,4.87,71.34,8.06,132.7841845140033,74.82,66.01,93.77
+Pemerintah Kab. Banjar,Kabupaten,Kalimantan Selatan,2.43,Cukup,2.87,Baik,0.44,3.04,69.89,2.36,71.87,18.07,594.4078947368421,74.82,66.01,
+Pemerintah Kab. Barito Kuala,Kabupaten,Kalimantan Selatan,2.33,Cukup,2.99,Baik,0.66,5.11,66.64,4.36,68.84,16.1,315.0684931506849,74.82,66.01,39.4
+Pemerintah Kab. Hulu Sungai Selatan,Kabupaten,Kalimantan Selatan,,,4.09,Sangat Baik,,4.84,69.21,3.38,71.21,11.47,236.9834710743802,74.82,66.01,73.15
+Pemerintah Kab. Hulu Sungai Tengah,Kabupaten,Kalimantan Selatan,2.46,Cukup,3.37,Baik,0.91,6.18,69.05,5.81,70.69,16.77,271.3592233009709,74.82,66.01,40.51
+Pemerintah Kab. Hulu Sungai Utara,Kabupaten,Kalimantan Selatan,,,2.51,Cukup,,6.83,66.12,5.75,68.28,16.19,237.04245973645683,74.82,66.01,70.98
+Pemerintah Kab. Kotabaru,Kabupaten,Kalimantan Selatan,1.99,Cukup,2.43,Cukup,0.44,,69.13,,70.61,,,74.82,66.01,14.4
+Pemerintah Kab. Tabalong,Kabupaten,Kalimantan Selatan,2.48,Cukup,3.7,Sangat Baik,1.22,6.27,72.6,5.64,74.41,16.13,257.2567783094099,74.82,66.01,91.21
+Pemerintah Kab. Tanah Bumbu,Kabupaten,Kalimantan Selatan,2.5,Cukup,3.3,Baik,0.8,4.82,71.0,3.41,72.95,18.92,392.5311203319503,74.82,66.01,51.76
+Pemerintah Kab. Tanah Laut,Kabupaten,Kalimantan Selatan,2.75,Baik,3.12,Baik,0.37,4.57,69.87,3.74,71.43,15.86,347.0459518599562,74.82,66.01,55.71
+Pemerintah Kab. Tapin,Kabupaten,Kalimantan Selatan,1.89,Cukup,3.81,Sangat Baik,1.92,3.6,70.31,3.33,72.51,6.93,192.5,74.82,66.01,68.67
+Pemerintah Kota Banjarbaru,Kota,Kalimantan Selatan,2.11,Cukup,2.74,Baik,0.63,4.4,79.26,3.79,80.51,11.95,271.59090909090907,74.82,66.01,58.31
+Pemerintah Kota Banjarmasin,Kota,Kalimantan Selatan,2.48,Cukup,4.06,Sangat Baik,1.58,4.89,77.57,4.58,79.05,34.84,712.474437627812,74.82,66.01,58.41
+Pemerintah Provinsi Kalimantan Selatan,Provinsi,Kalimantan Selatan,2.6,Baik,3.63,Sangat Baik,1.03,4.83,71.28,4.11,73.03,208.11,4308.695652173913,74.82,66.01,51.71
+Pemerintah Kab. Barito Selatan,Kabupaten,Kalimantan Tengah,2.28,Cukup,3.2,Baik,0.92,4.62,70.54,4.83,72.36,6.42,138.96103896103895,75.23,59.97,54.8
+Pemerintah Kab. Barito Timur,Kabupaten,Kalimantan Tengah,1.57,Kurang,2.82,Baik,1.25,6.38,71.47,6.66,73.26,8.02,125.70532915360502,75.23,59.97,39.62
+Pemerintah Kab. Barito Utara,Kabupaten,Kalimantan Tengah,1.63,Kurang,2.73,Baik,1.1,5.61,70.79,5.67,72.31,7.4,131.9073083778966,75.23,59.97,46.15
+Pemerintah Kab. Gunung Mas,Kabupaten,Kalimantan Tengah,,,2.74,Baik,,5.35,71.03,5.68,72.73,6.3,117.7570093457944,75.23,59.97,50.54
+Pemerintah Kab. Kapuas,Kabupaten,Kalimantan Tengah,,,2.63,Baik,,5.35,69.63,5.25,71.32,19.45,363.5514018691589,75.23,59.97,13.84
+Pemerintah Kab. Katingan,Kabupaten,Kalimantan Tengah,2.22,Cukup,3.25,Baik,1.03,5.25,68.89,5.26,70.7,9.15,174.2857142857143,75.23,59.97,42.44
+Pemerintah Kab. Kotawaringin Barat,Kabupaten,Kalimantan Tengah,2.35,Cukup,2.87,Baik,0.52,3.95,73.07,4.11,74.44,12.29,311.1392405063291,75.23,59.97,37.77
+Pemerintah Kab. Kotawaringin Timur,Kabupaten,Kalimantan Tengah,1.66,Kurang,3.22,Baik,1.56,5.91,71.38,5.66,72.66,27.06,457.8680203045685,75.23,59.97,
+Pemerintah Kab. Lamandau,Kabupaten,Kalimantan Tengah,2.27,Cukup,3.15,Baik,0.88,3.56,70.58,3.25,72.25,2.92,82.02247191011236,75.23,59.97,36.39
+Pemerintah Kab. Murung Raya,Kabupaten,Kalimantan Tengah,,,2.63,Baik,,6.15,68.12,6.58,70.03,7.31,118.86178861788616,75.23,59.97,37.8
+Pemerintah Kab. Pulang Pisau,Kabupaten,Kalimantan Tengah,1.79,Kurang,3.16,Baik,1.37,4.24,68.53,4.56,70.27,5.43,128.06603773584905,75.23,59.97,12.11
+Pemerintah Kab. Seruyan,Kabupaten,Kalimantan Tengah,,,2.5,Cukup,,7.22,67.67,7.08,69.05,15.07,208.7257617728532,75.23,59.97,37.58
+Pemerintah Kab. Sukamara,Kabupaten,Kalimantan Tengah,1.51,Kurang,2.75,Baik,1.24,3.66,68.27,4.14,69.85,2.38,65.02732240437157,75.23,59.97,38.6
+Pemerintah Kota Palangka Raya,Kota,Kalimantan Tengah,2.11,Cukup,3.75,Sangat Baik,1.64,3.75,80.82,3.52,82.2,10.86,289.6,75.23,59.97,50.21
+Pemerintah Provinsi Kalimantan Tengah,Provinsi,Kalimantan Tengah,1.0,Kurang,2.87,Baik,1.87,5.16,71.25,5.17,72.73,140.04,2713.953488372093,75.23,59.97,31.94
+Pemerintah Kab. Berau,Kabupaten,Kalimantan Timur,,,2.28,Cukup,,5.88,75.2,5.08,76.66,13.62,231.6326530612245,84.44,74.47,32.37
+Pemerintah Kab. Kutai Barat,Kabupaten,Kalimantan Timur,1.83,Cukup,2.62,Baik,0.79,10.24,72.07,9.56,74.5,15.38,150.1953125,84.44,74.47,20.76
+Pemerintah Kab. Kutai Kartanegara,Kabupaten,Kalimantan Timur,2.48,Cukup,3.09,Baik,0.61,7.99,74.06,7.28,75.91,62.36,780.4755944931164,84.44,74.47,58.59
+Pemerintah Kab. Kutai Timur,Kabupaten,Kalimantan Timur,1.03,Kurang,3.02,Baik,1.99,9.81,73.81,8.81,75.53,37.78,385.1172273190622,84.44,74.47,24.7
+Pemerintah Kab. Mahakam Ulu,Kabupaten,Kalimantan Timur,1.03,Kurang,2.25,Cukup,1.22,11.9,67.95,10.75,70.35,3.18,26.722689075630253,84.44,74.47,18.1
+Pemerintah Kab. Paser,Kabupaten,Kalimantan Timur,1.36,Kurang,3.27,Baik,1.91,9.73,72.93,8.63,74.7,27.56,283.2476875642343,84.44,74.47,35.78
+Pemerintah Kab. Penajam Paser Utara,Kabupaten,Kalimantan Timur,2.14,Cukup,2.87,Baik,0.73,7.61,72.01,6.69,73.9,12.13,159.39553219448095,84.44,74.47,37.61
+Pemerintah Kota Balikpapan,Kota,Kalimantan Timur,2.44,Cukup,3.96,Sangat Baik,1.52,2.89,80.71,2.23,82.24,18.53,641.1764705882352,84.44,74.47,57.21
+Pemerintah Kota Bontang,Kota,Kalimantan Timur,2.11,Cukup,3.39,Baik,1.28,4.62,80.59,3.74,82.42,8.41,182.03463203463204,84.44,74.47,63.91
+Pemerintah Kota Samarinda,Kota,Kalimantan Timur,2.46,Cukup,3.85,Sangat Baik,1.39,4.99,80.76,4.3,82.81,42.84,858.5170340681364,84.44,74.47,57.12
+Pemerintah Provinsi Kalimantan Timur,Provinsi,Kalimantan Timur,2.22,Cukup,3.79,Sangat Baik,1.57,6.54,76.88,5.78,78.83,241.77,3696.788990825688,84.44,74.47,61.74
+Pemerintah Kab. Bulungan,Kabupaten,Kalimantan Utara,2.1,Cukup,3.93,Sangat Baik,1.83,10.03,71.8,8.76,73.34,13.48,134.39680957128616,77.44,69.26,58.4
+Pemerintah Kab. Malinau,Kabupaten,Kalimantan Utara,,,2.45,Cukup,,7.3,72.32,6.94,73.9,6.39,87.53424657534246,77.44,69.26,47.69
+Pemerintah Kab. Nunukan,Kabupaten,Kalimantan Utara,,,2.89,Baik,,6.79,66.46,5.73,68.52,13.94,205.30191458026508,77.44,69.26,29.28
+Pemerintah Kab. Tana Tidung,Kabupaten,Kalimantan Utara,,,2.84,Baik,,5.15,67.76,4.47,70.08,1.49,28.93203883495145,77.44,69.26,45.64
+Pemerintah Kota Tarakan,Kota,Kalimantan Utara,2.2,Cukup,3.11,Baik,0.91,6.71,76.23,5.56,77.96,17.57,261.8479880774963,77.44,69.26,44.43
+Pemerintah Provinsi Kalimantan Utara,Provinsi,Kalimantan Utara,2.38,Cukup,3.79,Sangat Baik,1.41,7.36,71.19,6.32,73.02,52.86,718.2065217391305,77.44,69.26,53.35
+Pemerintah Kab. Bangka,Kabupaten,Kepulauan Bangka Belitung,2.25,Cukup,2.8,Baik,0.55,4.81,72.46,4.24,73.98,16.19,336.59043659043664,76.06,60.94,88.78
+Pemerintah Kab. Bangka Barat,Kabupaten,Kepulauan Bangka Belitung,2.27,Cukup,3.16,Baik,0.89,2.75,69.6,2.59,70.67,5.85,212.72727272727272,76.06,60.94,31.11
+Pemerintah Kab. Bangka Selatan,Kabupaten,Kepulauan Bangka Belitung,2.88,Baik,3.25,Baik,0.37,3.69,67.06,3.74,68.86,7.72,209.2140921409214,76.06,60.94,
+Pemerintah Kab. Bangka Tengah,Kabupaten,Kepulauan Bangka Belitung,2.76,Baik,4.07,Sangat Baik,1.31,5.13,70.89,5.94,71.9,10.03,195.5165692007797,76.06,60.94,66.54
+Pemerintah Kab. Belitung,Kabupaten,Kepulauan Bangka Belitung,2.4,Cukup,3.35,Baik,0.95,7.15,72.57,6.11,74.47,13.53,189.2307692307692,76.06,60.94,35.81
+Pemerintah Kab. Belitung Timur,Kabupaten,Kepulauan Bangka Belitung,2.15,Cukup,4.16,Sangat Baik,2.01,7.2,71.42,6.36,73.19,9.29,129.02777777777774,76.06,60.94,55.38
+Pemerintah Kota Pangkal Pinang,Kota,Kepulauan Bangka Belitung,2.1,Cukup,3.81,Sangat Baik,1.71,4.76,78.57,4.04,80.4,10.1,212.18487394957984,76.06,60.94,60.75
+Pemerintah Provinsi Kep. Bangka Belitung,Provinsi,Kepulauan Bangka Belitung,2.6,Baik,4.11,Sangat Baik,1.51,4.9,71.69,4.55,73.33,72.71,1483.877551020408,76.06,60.94,54.64
+Pemerintah Kab. Bintan,Kabupaten,Kepulauan Riau,2.06,Cukup,3.25,Baik,1.19,6.42,74.57,5.44,76.18,10.54,164.17445482866043,89.26,81.03,58.67
+Pemerintah Kab. Karimun,Kabupaten,Kepulauan Riau,,,2.33,Cukup,,6.85,71.7,5.78,74.28,16.28,237.6642335766424,89.26,81.03,54.32
+Pemerintah Kab. Kepulauan Anambas,Kabupaten,Kepulauan Riau,2.03,Cukup,3.04,Baik,1.01,7.09,69.23,6.67,70.93,3.08,43.441466854724965,89.26,81.03,41.36
+Pemerintah Kab. Lingga,Kabupaten,Kepulauan Riau,,,2.6,Baik,,13.93,65.83,9.99,68.19,12.58,90.30868628858578,89.26,81.03,33.22
+Pemerintah Kab. Natuna,Kabupaten,Kepulauan Riau,2.24,Cukup,3.61,Sangat Baik,1.37,4.95,73.09,5.04,74.56,3.98,80.4040404040404,89.26,81.03,42.87
+Pemerintah Kota Batam,Kota,Kepulauan Riau,2.64,Baik,3.77,Sangat Baik,1.13,5.05,81.12,4.85,82.86,77.17,1528.1188118811883,89.26,81.03,58.18
+Pemerintah Kota Tanjungpinang,Kota,Kepulauan Riau,2.29,Cukup,3.25,Baik,0.96,9.57,78.93,6.86,80.63,20.85,217.86833855799367,89.26,81.03,
+Pemerintah Provinsi Kepulauan Riau,Provinsi,Kepulauan Riau,1.96,Cukup,3.05,Baik,1.09,6.12,75.79,5.37,77.97,144.46,2360.457516339869,89.26,81.03,50.33
+Pemerintah Kab. Lampung Barat,Kabupaten,Lampung,1.91,Cukup,2.62,Baik,0.71,12.82,67.9,10.68,69.84,39.36,307.0202808112324,73.37,59.94,69.93
+Pemerintah Kab. Lampung Selatan,Kabupaten,Lampung,,,3.08,Baik,,14.19,68.49,12.57,70.28,145.85,1027.8365045806906,73.37,59.94,71.4
+Pemerintah Kab. Lampung Tengah,Kabupaten,Lampung,1.67,Kurang,2.68,Baik,1.01,11.99,70.23,10.37,72.37,155.77,1299.1659716430358,73.37,59.94,52.59
+Pemerintah Kab. Lampung Timur,Kabupaten,Lampung,,,2.84,Baik,,15.08,69.66,13.19,71.84,159.79,1059.6153846153843,73.37,59.94,53.39
+Pemerintah Kab. Lampung Utara,Kabupaten,Lampung,1.86,Cukup,3.12,Baik,1.26,19.63,67.89,16.92,69.62,121.91,621.0392256749873,73.37,59.94,64.3
+Pemerintah Kab. Mesuji,Kabupaten,Lampung,1.69,Kurang,3.99,Sangat Baik,2.3,7.54,64.04,6.31,66.46,15.24,202.1220159151194,73.37,59.94,87.37
+Pemerintah Kab. Pesawaran,Kabupaten,Lampung,,,3.49,Baik,,15.11,66.14,11.86,68.52,68.31,452.08471211118473,73.37,59.94,66.51
+Pemerintah Kab. Pesisir Barat,Kabupaten,Lampung,,,2.94,Baik,,14.81,64.3,12.64,66.73,23.23,156.85347738014855,73.37,59.94,43.58
+Pemerintah Kab. Pringsewu,Kabupaten,Lampung,2.03,Cukup,3.05,Baik,1.02,10.11,70.45,8.32,72.29,41.04,405.9347181008902,73.37,59.94,68.33
+Pemerintah Kab. Tanggamus,Kabupaten,Lampung,1.0,Kurang,3.44,Baik,2.44,11.81,66.65,10.28,68.52,71.89,608.7214225232854,73.37,59.94,
+Pemerintah Kab. Tulang Bawang,Kabupaten,Lampung,,,2.85,Baik,,9.67,68.73,7.88,70.66,44.53,460.49638055842814,73.37,59.94,56.63
+Pemerintah Kab. Tulang Bawang Barat,Kabupaten,Lampung,1.97,Cukup,2.49,Cukup,0.52,8.32,66.22,7.22,68.46,23.03,276.80288461538464,73.37,59.94,47.33
+Pemerintah Kab. Way Kanan,Kabupaten,Lampung,2.1,Cukup,3.52,Sangat Baik,1.42,13.09,67.57,10.43,69.31,59.89,457.52482811306345,73.37,59.94,56.59
+Pemerintah Kota Bandar Lampung,Kota,Lampung,1.2,Kurang,2.98,Baik,1.78,9.11,77.58,7.37,79.19,98.76,1084.0834248079034,73.37,59.94,72.07
+Pemerintah Kota Metro,Kota,Lampung,2.14,Cukup,3.34,Baik,1.2,8.93,77.49,6.78,78.93,15.32,171.55655095184773,73.37,59.94,53.87
+Pemerintah Provinsi Lampung,Provinsi,Lampung,2.76,Baik,4.09,Sangat Baik,1.33,12.62,69.9,10.69,71.81,1083.93,8588.985736925517,73.37,59.94,65.5
+Pemerintah Kab. Buru Selatan,Kabupaten,Maluku,,,1.81,Cukup,,15.89,64.8,14.91,67.09,9.99,62.86972938955317,59.96,49.74,43.64
+Pemerintah Kab. Kepulauan Aru,Kabupaten,Maluku,,,2.41,Cukup,,26.53,63.83,23.39,65.83,25.11,94.647568790049,59.96,49.74,13.8
+Pemerintah Kab. Kepulauan Tanimbar,Kabupaten,Maluku,,,2.31,Cukup,,27.27,,23.66,,30.7,112.57792445911258,59.96,49.74,12.7
+Pemerintah Kab. Maluku Barat Daya,Kabupaten,Maluku,1.79,Kurang,2.05,Cukup,0.26,29.55,62.37,27.95,64.86,21.74,73.57021996615904,59.96,49.74,40.66
+Pemerintah Kab. Maluku Tengah,Kabupaten,Maluku,,,2.24,Cukup,,19.84,71.32,17.67,73.21,74.59,375.9576612903226,59.96,49.74,55.11
+Pemerintah Kab. Maluku Tenggara,Kabupaten,Maluku,,,1.96,Cukup,,22.73,66.33,21.22,68.24,22.89,100.70391553013638,59.96,49.74,18.68
+Pemerintah Kab. Seram Bagian Barat,Kabupaten,Maluku,1.6,Kurang,1.9,Cukup,0.3,25.27,65.83,22.31,68.39,43.72,173.01147605856747,59.96,49.74,34.56
+Pemerintah Kab. Seram Bagian Timur,Kabupaten,Maluku,,,2.41,Cukup,,23.25,64.3,21.03,66.24,26.41,113.59139784946235,59.96,49.74,33.25
+Pemerintah Kota Ambon,Kota,Maluku,2.08,Cukup,2.64,Baik,0.56,5.02,81.23,5.13,82.56,23.67,471.51394422310767,59.96,49.74,
+Pemerintah Kota Tual,Kota,Maluku,,,2.28,Cukup,,23.26,68.16,20.01,70.21,17.76,76.3542562338779,59.96,49.74,
+Pemerintah Provinsi Maluku,Provinsi,Maluku,1.93,Cukup,2.63,Baik,0.7,17.87,69.71,16.05,71.57,321.81,1800.8393956351426,59.96,49.74,46.71
+Pemerintah Kab. Halmahera Barat,Kabupaten,Maluku Utara,,,1.9,Cukup,,8.95,65.56,8.75,67.53,10.59,118.32402234636872,59.17,42.68,39.84
+Pemerintah Kab. Halmahera Selatan,Kabupaten,Maluku Utara,,,2.43,Cukup,,5.19,64.19,5.63,66.66,12.24,235.8381502890173,59.17,42.68,55.24
+Pemerintah Kab. Halmahera Tengah,Kabupaten,Maluku Utara,,,1.9,Cukup,,13.52,65.82,10.71,68.45,7.65,56.5828402366864,59.17,42.68,43.66
+Pemerintah Kab. Halmahera Timur,Kabupaten,Maluku Utara,,,1.38,Kurang,,15.04,67.0,11.91,69.58,14.58,96.94148936170214,59.17,42.68,54.04
+Pemerintah Kab. Halmahera Utara,Kabupaten,Maluku Utara,2.02,Cukup,2.73,Baik,0.71,5.22,67.82,4.71,69.78,10.16,194.6360153256705,59.17,42.68,34.82
+Pemerintah Kab. Kepulauan Sula,Kabupaten,Maluku Utara,,,2.06,Cukup,,8.23,63.8,7.96,65.99,8.36,101.57958687727825,59.17,42.68,
+Pemerintah Kab. Pulau Morotai,Kabupaten,Maluku Utara,,,1.97,Cukup,,6.52,62.9,5.11,65.68,4.45,68.2515337423313,59.17,42.68,40.66
+Pemerintah Kab. Pulau Taliabu,Kabupaten,Maluku Utara,,,2.09,Cukup,,7.49,60.73,7.13,62.9,4.05,54.07209612817088,59.17,42.68,6.0
+Pemerintah Kota Ternate,Kota,Maluku Utara,,,1.89,Cukup,,3.55,80.14,3.14,82.12,8.45,238.0281690140845,59.17,42.68,
+Pemerintah Kota Tidore Kepulauan,Kota,Maluku Utara,1.2,Kurang,2.32,Cukup,1.12,6.58,70.99,6.56,72.91,6.64,100.91185410334346,59.17,42.68,70.0
+Pemerintah Provinsi Maluku Utara,Provinsi,Maluku Utara,1.0,Kurang,2.69,Baik,1.69,6.89,68.76,6.32,71.03,87.16,1265.021770682148,59.17,42.68,58.47
+Pemerintah Kab. Bima,Kabupaten,Nusa Tenggara Barat,,,2.52,Cukup,,14.88,66.66,13.88,68.94,75.49,507.3252688172042,68.52,52.96,18.1
+Pemerintah Kab. Dompu,Kabupaten,Nusa Tenggara Barat,1.0,Kurang,2.52,Cukup,1.52,12.6,68.45,11.59,70.78,33.26,263.968253968254,68.52,52.96,67.43
+Pemerintah Kab. Lombok Barat,Kabupaten,Nusa Tenggara Barat,2.64,Baik,3.05,Baik,0.41,14.47,68.61,12.65,70.67,105.24,727.2978576364893,68.52,52.96,50.26
+Pemerintah Kab. Lombok Tengah,Kabupaten,Nusa Tenggara Barat,2.37,Cukup,3.04,Baik,0.67,13.44,66.72,12.07,69.17,131.94,981.6964285714288,68.52,52.96,60.01
+Pemerintah Kab. Lombok Timur,Kabupaten,Nusa Tenggara Barat,,,3.27,Baik,,15.38,66.66,14.51,69.23,190.84,1240.8322496749024,68.52,52.96,48.84
+Pemerintah Kab. Lombok Utara,Kabupaten,Nusa Tenggara Barat,2.01,Cukup,2.71,Baik,0.7,27.04,64.77,23.96,67.24,61.7,228.1804733727811,68.52,52.96,54.99
+Pemerintah Kab. Sumbawa,Kabupaten,Nusa Tenggara Barat,2.11,Cukup,2.9,Baik,0.79,13.91,68.01,12.87,70.55,66.0,474.4787922358016,68.52,52.96,31.16
+Pemerintah Kab. Sumbawa Barat,Kabupaten,Nusa Tenggara Barat,2.65,Baik,3.45,Baik,0.8,13.54,71.85,12.23,73.86,21.51,158.86262924667653,68.52,52.96,58.97
+Pemerintah Kota Bima,Kota,Nusa Tenggara Barat,2.02,Cukup,2.66,Baik,0.64,8.88,76.11,8.12,78.04,16.22,182.65765765765764,68.52,52.96,76.65
+Pemerintah Kota Mataram,Kota,Nusa Tenggara Barat,2.34,Cukup,3.55,Sangat Baik,1.21,8.65,79.14,8.0,80.6,44.45,513.8728323699422,68.52,52.96,71.57
+Pemerintah Provinsi Nusa Tenggara Barat,Provinsi,Nusa Tenggara Barat,2.94,Baik,3.56,Sangat Baik,0.62,14.14,68.65,12.91,70.93,746.66,5280.48090523338,68.52,52.96,63.4
+Pemerintah Kab. Alor,Kabupaten,Nusa Tenggara Timur,1.9,Cukup,2.19,Cukup,0.29,21.09,61.37,19.87,63.82,43.83,207.82361308677096,54.84,43.14,15.0
+Pemerintah Kab. Belu,Kabupaten,Nusa Tenggara Timur,,,2.47,Cukup,,15.68,62.77,13.86,64.43,35.41,225.82908163265304,54.84,43.14,9.4
+Pemerintah Kab. Ende,Kabupaten,Nusa Tenggara Timur,1.0,Kurang,2.58,Cukup,1.58,24.13,67.3,22.57,69.11,66.38,275.09324492333195,54.84,43.14,15.8
+Pemerintah Kab. Flores Timur,Kabupaten,Nusa Tenggara Timur,1.0,Kurang,2.1,Cukup,1.1,11.14,64.22,11.25,66.29,28.9,259.4254937163375,54.84,43.14,42.33
+Pemerintah Kab. Kupang,Kabupaten,Nusa Tenggara Timur,1.6,Kurang,2.48,Cukup,0.88,22.98,64.41,21.37,66.57,91.25,397.0844212358572,54.84,43.14,37.8
+Pemerintah Kab. Lembata,Kabupaten,Nusa Tenggara Timur,,,2.42,Cukup,,26.21,64.75,24.22,66.62,38.75,147.84433422357878,54.84,43.14,38.26
+Pemerintah Kab. Malaka,Kabupaten,Nusa Tenggara Timur,1.31,Kurang,2.17,Cukup,0.86,16.33,60.42,13.92,62.73,32.17,196.99938763012864,54.84,43.14,9.0
+Pemerintah Kab. Manggarai,Kabupaten,Nusa Tenggara Timur,1.55,Kurang,2.9,Baik,1.35,20.48,65.01,19.01,67.28,71.03,346.826171875,54.84,43.14,51.84
+Pemerintah Kab. Manggarai Barat,Kabupaten,Nusa Tenggara Timur,2.34,Cukup,3.47,Baik,1.13,17.92,64.17,16.74,66.65,51.15,285.43526785714283,54.84,43.14,
+Pemerintah Kab. Manggarai Timur,Kabupaten,Nusa Tenggara Timur,1.15,Kurang,2.64,Baik,1.49,26.5,61.37,24.9,64.2,77.17,291.20754716981133,54.84,43.14,11.8
+Pemerintah Kab. Ngada,Kabupaten,Nusa Tenggara Timur,,,2.17,Cukup,,12.58,67.88,11.87,69.52,20.98,166.77265500794914,54.84,43.14,33.26
+Pemerintah Kab. Rote Ndao,Kabupaten,Nusa Tenggara Timur,1.0,Kurang,3.35,Baik,2.35,28.08,62.6,25.78,64.59,51.71,184.15242165242165,54.84,43.14,40.18
+Pemerintah Kab. Sabu Raijua,Kabupaten,Nusa Tenggara Timur,1.05,Kurang,1.84,Cukup,0.79,30.13,57.03,28.13,59.58,30.6,101.55990706936608,54.84,43.14,
+Pemerintah Kab. Sikka,Kabupaten,Nusa Tenggara Timur,1.11,Kurang,2.02,Cukup,0.91,13.35,65.41,11.89,67.41,43.09,322.7715355805244,54.84,43.14,34.73
+Pemerintah Kab. Sumba Barat,Kabupaten,Nusa Tenggara Timur,1.68,Kurang,3.12,Baik,1.44,28.39,63.83,26.52,66.06,37.78,133.07502641775275,54.84,43.14,42.49
+Pemerintah Kab. Sumba Barat Daya,Kabupaten,Nusa Tenggara Timur,1.56,Kurang,2.03,Cukup,0.47,28.18,62.29,27.2,64.27,100.42,356.3520227111427,54.84,43.14,31.02
+Pemerintah Kab. Sumba Tengah,Kabupaten,Nusa Tenggara Timur,1.0,Kurang,2.19,Cukup,1.19,34.27,61.8,30.84,64.31,25.48,74.35074409104173,54.84,43.14,27.83
+Pemerintah Kab. Sumba Timur,Kabupaten,Nusa Tenggara Timur,1.75,Kurang,2.56,Cukup,0.81,29.68,65.74,27.04,67.68,78.33,263.9150943396226,54.84,43.14,65.84
+Pemerintah Kab. Timor Tengah Selatan,Kabupaten,Nusa Tenggara Timur,2.26,Cukup,2.83,Baik,0.57,26.64,62.16,24.68,64.36,125.68,471.7717717717717,54.84,43.14,
+Pemerintah Kab. Timor Tengah Utara,Kabupaten,Nusa Tenggara Timur,1.1,Kurang,2.43,Cukup,1.33,22.62,63.69,20.89,65.83,58.33,257.86914235190096,54.84,43.14,
+Pemerintah Kota Kupang,Kota,Nusa Tenggara Timur,,,3.14,Baik,,9.17,79.74,8.24,81.08,41.77,455.50708833151583,54.84,43.14,13.3
+Pemerintah Provinsi Nusa Tenggara Timur,Provinsi,Nusa Tenggara Timur,2.28,Cukup,3.89,Sangat Baik,1.61,20.99,65.28,19.48,67.39,1169.31,5570.795616960458,54.84,43.14,50.1
+Pemerintah Kab. Jayapura,Kabupaten,Papua,1.47,Kurang,2.82,Baik,1.35,12.13,72.03,11.6,74.11,15.56,128.2769991755977,62.24,26.49,45.74
+Pemerintah Kab. Keerom,Kabupaten,Papua,1.09,Kurang,1.14,Kurang,0.05,16.0,66.49,15.84,68.68,9.3,58.125,62.24,26.49,13.88
+Pemerintah Kab. Sarmi,Kabupaten,Papua,,,1.53,Kurang,,13.84,63.94,14.05,66.72,5.56,40.17341040462428,62.24,26.49,33.49
+Pemerintah Kab. Supiori,Kabupaten,Papua,,,1.48,Kurang,,37.91,62.72,37.72,65.15,7.83,20.654180954893167,62.24,26.49,6.0
+Pemerintah Kota Jayapura,Kota,Papua,1.74,Kurang,2.35,Cukup,0.61,11.39,80.11,10.72,81.67,34.79,305.4433713784021,62.24,26.49,35.66
+Pemerintah Provinsi Papua,Provinsi,Papua,1.8,Cukup,2.03,Cukup,0.23,26.86,60.62,17.26,73.0,920.44,3426.8056589724497,62.24,26.49,27.16
+Pemerintah Kab. Fak-Fak,Kabupaten,Papua Barat,1.63,Kurang,1.68,Kurang,0.05,22.86,68.52,20.86,70.39,18.51,80.97112860892389,62.96,54.61,9.38
+Pemerintah Kab. Kaimana,Kabupaten,Papua Barat,1.12,Kurang,2.15,Cukup,1.03,16.04,65.31,14.41,67.6,10.31,64.27680798004988,62.96,54.61,56.89
+Pemerintah Kab. Manokwari,Kabupaten,Papua Barat,1.51,Kurang,1.75,Kurang,0.24,20.56,72.02,18.45,73.83,35.63,173.29766536964985,62.96,54.61,18.72
+Pemerintah Kab. Teluk Wondama,Kabupaten,Papua Barat,1.53,Kurang,2.4,Cukup,0.87,31.61,60.33,28.47,62.36,10.74,33.976589686807976,62.96,54.61,7.4
+Pemerintah Provinsi Papua Barat,Provinsi,Papua Barat,2.04,Cukup,2.28,Cukup,0.24,21.84,65.26,21.66,67.02,219.07,1003.0677655677656,62.96,54.61,36.21
+Pemerintah Kab. Raja Ampat,Kabupaten,Papua Barat Daya,1.22,Kurang,1.33,Kurang,0.11,17.5,63.92,15.83,65.86,8.69,49.65714285714286,65.75,54.61,0.4
+Pemerintah Kab. Sorong,Kabupaten,Papua Barat Daya,1.87,Cukup,2.49,Cukup,0.62,27.78,65.77,25.71,68.29,25.93,93.3405327573794,65.75,54.61,64.09
+Pemerintah Kota Sorong,Kota,Papua Barat Daya,1.03,Kurang,1.78,Kurang,0.75,15.35,78.49,13.67,79.93,41.75,271.9869706840391,65.75,54.61,4.9
+Pemerintah Provinsi Papua Barat Daya,Provinsi,Papua Barat Daya,,,2.39,Cukup,,,,18.13,68.63,,,65.75,54.61,16.58
+Pemerintah Kab. Jayawijaya,Kabupaten,Papua Pegunungan,1.55,Kurang,2.43,Cukup,0.88,37.09,58.67,32.28,61.03,78.18,210.78457805338368,6.76,26.49,0.0
+Pemerintah Kab. Mamberamo Tengah,Kabupaten,Papua Pegunungan,,,1.09,Kurang,,36.76,48.32,35.27,50.72,19.66,53.48204570184984,6.76,26.49,0.0
+Pemerintah Kab. Nduga,Kabupaten,Papua Pegunungan,,,1.5,Kurang,,37.18,32.84,36.28,36.3,41.17,110.7315761161915,6.76,26.49,0.0
+Pemerintah Kab. Tolikara,Kabupaten,Papua Pegunungan,,,1.47,Kurang,,32.6,49.6,31.22,52.05,48.16,147.73006134969324,6.76,26.49,0.0
+Pemerintah Provinsi Papua Pegunungan,Provinsi,Papua Pegunungan,,,1.62,Kurang,,,,32.97,53.42,,,6.76,26.49,1.2
+Pemerintah Kab. Asmat,Kabupaten,Papua Selatan,,,1.03,Kurang,,24.83,51.29,24.5,53.92,25.04,100.8457511075312,48.44,26.49,1.2
+Pemerintah Kab. Boven Digoel,Kabupaten,Papua Selatan,,,2.16,Cukup,,19.9,61.62,19.24,64.26,13.88,69.74874371859298,48.44,26.49,3.6
+Pemerintah Kab. Merauke,Kabupaten,Papua Selatan,,,2.25,Cukup,,10.16,70.49,10.19,72.73,23.83,234.54724409448812,48.44,26.49,40.26
+Pemerintah Provinsi Papua Selatan,Provinsi,Papua Selatan,,,1.61,Kurang,,,,17.44,67.9,,,48.44,26.49,1.8
+Pemerintah Kab. Dogiyai,Kabupaten,Papua Tengah,,,1.53,Kurang,,28.81,55.0,30.03,57.68,28.38,98.50746268656717,28.71,26.49,0.0
+Pemerintah Kab. Mimika,Kabupaten,Papua Tengah,,,2.33,Cukup,,14.17,74.48,14.18,76.85,30.95,218.41919548341568,28.71,26.49,45.45
+Pemerintah Kab. Puncak,Kabupaten,Papua Tengah,,,1.62,Kurang,,36.26,43.17,37.49,45.6,40.78,112.46552675124104,28.71,26.49,0.0
+Pemerintah Kab. Puncak Jaya,Kabupaten,Papua Tengah,,,1.94,Cukup,,36.0,48.99,35.94,51.78,46.39,128.86111111111111,28.71,26.49,
+Pemerintah Provinsi Papua Tengah,Provinsi,Papua Tengah,,,1.88,Cukup,,,,29.76,59.75,,,28.71,26.49,14.6
+Pemerintah Kab. Bengkalis,Kabupaten,Riau,,,2.79,Baik,,6.64,73.58,6.36,75.28,37.66,567.1686746987951,77.68,62.83,37.78
+Pemerintah Kab. Indragiri Hilir,Kabupaten,Riau,,,2.54,Cukup,,6.18,66.63,5.66,68.38,44.61,721.8446601941748,77.68,62.83,
+Pemerintah Kab. Indragiri Hulu,Kabupaten,Riau,1.77,Kurang,2.89,Baik,1.12,6.18,70.01,6.02,71.48,27.35,442.5566343042072,77.68,62.83,51.25
+Pemerintah Kab. Kampar,Kabupaten,Riau,1.67,Kurang,2.96,Baik,1.29,7.82,73.02,6.92,74.85,68.74,879.0281329923272,77.68,62.83,58.05
+Pemerintah Kab. Kepulauan Meranti,Kabupaten,Riau,1.19,Kurang,3.08,Baik,1.89,25.68,65.7,23.15,67.92,48.5,188.8629283489097,77.68,62.83,27.15
+Pemerintah Kab. Kuantan Singingi,Kabupaten,Riau,2.96,Baik,3.23,Baik,0.27,8.97,70.6,7.89,72.33,28.9,322.18506131549606,77.68,62.83,
+Pemerintah Kab. Pelalawan,Kabupaten,Riau,1.38,Kurang,2.5,Cukup,1.12,9.63,72.08,8.49,74.08,49.3,511.9418483904464,77.68,62.83,65.7
+Pemerintah Kab. Rokan Hilir,Kabupaten,Riau,,,3.51,Sangat Baik,,7.18,69.34,7.01,71.2,51.97,723.8161559888579,77.68,62.83,38.63
+Pemerintah Kab. Rokan Hulu,Kabupaten,Riau,1.78,Kurang,3.46,Baik,1.68,10.4,69.67,9.62,71.82,74.73,718.5576923076923,77.68,62.83,47.75
+Pemerintah Kab. Siak,Kabupaten,Riau,1.9,Cukup,3.54,Sangat Baik,1.64,5.18,73.98,5.08,75.45,25.77,497.4903474903475,77.68,62.83,56.87
+Pemerintah Kota Dumai,Kota,Riau,2.56,Cukup,3.9,Sangat Baik,1.34,3.42,74.75,3.14,76.19,10.57,309.0643274853801,77.68,62.83,54.7
+Pemerintah Kota Pekanbaru,Kota,Riau,2.17,Cukup,3.85,Sangat Baik,1.68,2.83,81.58,3.15,82.89,32.73,1156.537102473498,77.68,62.83,68.34
+Pemerintah Provinsi Riau,Provinsi,Riau,2.55,Cukup,3.75,Sangat Baik,1.2,7.12,72.94,6.67,74.79,500.81,7033.848314606742,77.68,62.83,53.63
+Pemerintah Kab. Majene,Kabupaten,Sulawesi Barat,1.52,Kurang,3.04,Baik,1.52,14.34,67.29,13.64,69.42,25.01,174.40725244072524,66.61,48.73,
+Pemerintah Kab. Mamasa,Kabupaten,Sulawesi Barat,,,2.01,Cukup,,13.77,66.63,14.2,68.37,22.29,161.87363834422658,66.61,48.73,12.7
+Pemerintah Kab. Mamuju,Kabupaten,Sulawesi Barat,1.52,Kurang,2.42,Cukup,0.9,7.46,68.32,7.15,70.4,22.3,298.9276139410188,66.61,48.73,44.69
+Pemerintah Kab. Mamuju Tengah,Kabupaten,Sulawesi Barat,,,2.28,Cukup,,7.13,66.18,7.72,68.36,9.74,136.60589060308556,66.61,48.73,58.95
+Pemerintah Kab. Pasangkayu,Kabupaten,Sulawesi Barat,,,2.52,Cukup,,4.77,,5.21,,8.53,178.8259958071279,66.61,48.73,15.4
+Pemerintah Kab. Polewali Mandar,Kabupaten,Sulawesi Barat,2.71,Baik,3.88,Sangat Baik,1.17,15.68,64.23,15.66,66.22,69.32,442.09183673469386,66.61,48.73,45.32
+Pemerintah Provinsi Sulawesi Barat,Provinsi,Sulawesi Barat,2.03,Cukup,3.7,Sangat Baik,1.67,11.29,66.36,11.21,68.2,157.19,1392.29406554473,66.61,48.73,49.5
+Pemerintah Kab. Bantaeng,Kabupaten,Sulawesi Selatan,2.28,Cukup,3.64,Sangat Baik,1.36,9.41,68.99,8.26,71.48,17.78,188.9479277364506,70.1,59.69,36.69
+Pemerintah Kab. Barru,Kabupaten,Sulawesi Selatan,2.07,Cukup,2.79,Baik,0.72,8.68,71.13,8.31,73.06,15.18,174.8847926267281,70.1,59.69,34.34
+Pemerintah Kab. Bone,Kabupaten,Sulawesi Selatan,2.08,Cukup,3.18,Baik,1.1,10.52,66.4,9.58,68.36,79.64,757.0342205323194,70.1,59.69,30.56
+Pemerintah Kab. Bulukumba,Kabupaten,Sulawesi Selatan,2.03,Cukup,2.56,Cukup,0.53,7.43,69.62,6.71,71.97,31.31,421.399730820996,70.1,59.69,47.23
+Pemerintah Kab. Enrekang,Kabupaten,Sulawesi Selatan,2.34,Cukup,3.2,Baik,0.86,12.47,72.91,11.25,74.61,26.13,209.54290296712108,70.1,59.69,21.56
+Pemerintah Kab. Gowa,Kabupaten,Sulawesi Selatan,1.47,Kurang,3.63,Sangat Baik,2.16,7.54,70.29,6.85,72.26,58.66,777.9840848806366,70.1,59.69,43.42
+Pemerintah Kab. Jeneponto,Kabupaten,Sulawesi Selatan,1.84,Cukup,3.1,Baik,1.26,14.28,64.56,11.82,66.38,52.35,366.59663865546224,70.1,59.69,18.1
+Pemerintah Kab. Kepulauan Selayar,Kabupaten,Sulawesi Selatan,2.05,Cukup,2.57,Cukup,0.52,12.45,67.76,10.79,70.03,16.93,135.98393574297188,70.1,59.69,
+Pemerintah Kab. Luwu,Kabupaten,Sulawesi Selatan,2.29,Cukup,2.6,Baik,0.31,12.53,70.85,11.7,72.79,46.26,369.1939345570631,70.1,59.69,44.22
+Pemerintah Kab. Luwu Timur,Kabupaten,Sulawesi Selatan,,,3.16,Baik,,6.94,73.34,6.55,74.95,20.99,302.4495677233429,70.1,59.69,56.93
+Pemerintah Kab. Luwu Utara,Kabupaten,Sulawesi Selatan,2.68,Baik,3.26,Baik,0.58,13.59,70.02,11.24,72.07,43.15,317.5128771155261,70.1,59.69,43.38
+Pemerintah Kab. Maros,Kabupaten,Sulawesi Selatan,2.19,Cukup,3.15,Baik,0.96,9.57,70.41,9.32,72.11,34.11,356.4263322884012,70.1,59.69,50.98
+Pemerintah Kab. Pangkajene dan Kepulauan,Kabupaten,Sulawesi Selatan,2.11,Cukup,2.64,Baik,0.53,14.28,69.21,12.41,71.22,48.4,338.9355742296919,70.1,59.69,
+Pemerintah Kab. Pinrang,Kabupaten,Sulawesi Selatan,2.62,Baik,3.49,Baik,0.87,8.81,71.45,8.55,73.55,33.51,380.36322360953454,70.1,59.69,49.29
+Pemerintah Kab. Sidenreng Rappang,Kabupaten,Sulawesi Selatan,1.79,Kurang,3.04,Baik,1.25,5.04,71.54,5.02,73.21,15.25,302.57936507936506,70.1,59.69,47.72
+Pemerintah Kab. Sinjai,Kabupaten,Sulawesi Selatan,2.07,Cukup,3.01,Baik,0.94,8.84,67.75,7.82,69.52,21.69,245.36199095022627,70.1,59.69,41.81
+Pemerintah Kab. Soppeng,Kabupaten,Sulawesi Selatan,1.71,Kurang,2.98,Baik,1.27,7.53,68.99,6.9,71.39,17.27,229.34926958831332,70.1,59.69,64.54
+Pemerintah Kab. Takalar,Kabupaten,Sulawesi Selatan,,,2.8,Baik,,8.25,67.72,7.75,69.47,24.6,298.1818181818182,70.1,59.69,57.02
+Pemerintah Kab. Tana Toraja,Kabupaten,Sulawesi Selatan,,,2.75,Baik,,12.27,69.49,10.79,71.67,29.33,239.038304808476,70.1,59.69,15.6
+Pemerintah Kab. Toraja Utara,Kabupaten,Sulawesi Selatan,,,2.31,Cukup,,11.99,69.75,10.73,71.85,28.39,236.7806505421184,70.1,59.69,25.26
+Pemerintah Kab. Wajo,Kabupaten,Sulawesi Selatan,2.42,Cukup,2.77,Baik,0.35,6.46,69.62,6.47,71.52,26.22,405.8823529411764,70.1,59.69,
+Pemerintah Kota Makassar,Kota,Sulawesi Selatan,2.04,Cukup,4.02,Sangat Baik,1.98,4.82,,4.97,,74.69,1549.5850622406638,70.1,59.69,76.56
+Pemerintah Kota Palopo,Kota,Sulawesi Selatan,2.34,Cukup,3.12,Baik,0.78,8.14,78.38,7.35,79.94,15.21,186.85503685503687,70.1,59.69,65.3
+Pemerintah Kota Parepare,Kota,Sulawesi Selatan,2.17,Cukup,2.62,Baik,0.45,5.4,78.21,5.27,79.64,7.93,146.85185185185182,70.1,59.69,54.88
+Pemerintah Provinsi Sulawesi Selatan,Provinsi,Sulawesi Selatan,2.05,Cukup,3.94,Sangat Baik,1.89,8.78,72.24,8.06,74.05,784.98,8940.546697038726,70.1,59.69,59.66
+Pemerintah Kab. Banggai,Kabupaten,Sulawesi Tengah,,,3.59,Sangat Baik,,7.83,70.6,6.56,72.32,30.1,384.418901660281,62.44,50.15,
+Pemerintah Kab. Banggai Kepulauan,Kabupaten,Sulawesi Tengah,1.45,Kurang,2.55,Cukup,1.1,13.72,65.61,12.32,67.43,16.33,119.02332361516032,62.44,50.15,33.84
+Pemerintah Kab. Banggai Laut,Kabupaten,Sulawesi Tengah,,,2.11,Cukup,,14.17,65.65,13.78,67.43,10.92,77.06422018348624,62.44,50.15,40.89
+Pemerintah Kab. Buol,Kabupaten,Sulawesi Tengah,1.93,Cukup,3.19,Baik,1.26,14.06,68.25,13.08,70.28,23.46,166.85633001422477,62.44,50.15,34.55
+Pemerintah Kab. Donggala,Kabupaten,Sulawesi Tengah,,,2.45,Cukup,,16.73,65.72,15.3,67.45,51.23,306.2163777644949,62.44,50.15,6.1
+Pemerintah Kab. Morowali,Kabupaten,Sulawesi Tengah,1.53,Kurang,3.25,Baik,1.72,13.75,72.29,11.55,73.54,17.07,124.14545454545454,62.44,50.15,45.89
+Pemerintah Kab. Morowali Utara,Kabupaten,Sulawesi Tengah,,,2.56,Cukup,,13.9,68.48,11.95,70.58,18.4,132.37410071942443,62.44,50.15,39.99
+Pemerintah Kab. Parigi Moutong,Kabupaten,Sulawesi Tengah,,,2.72,Baik,,15.28,65.82,14.2,67.49,76.79,502.55235602094245,62.44,50.15,
+Pemerintah Kab. Poso,Kabupaten,Sulawesi Tengah,1.97,Cukup,2.52,Cukup,0.55,15.92,71.45,14.23,72.87,41.99,263.75628140703515,62.44,50.15,26.16
+Pemerintah Kab. Sigi,Kabupaten,Sulawesi Tengah,1.61,Kurang,2.29,Cukup,0.68,13.05,68.49,12.06,70.51,31.51,241.455938697318,62.44,50.15,38.14
+Pemerintah Kab. Tojo Una Una,Kabupaten,Sulawesi Tengah,,,3.06,Baik,,16.6,64.74,16.36,66.97,25.86,155.78313253012047,62.44,50.15,50.47
+Pemerintah Kab. Tolitoli,Kabupaten,Sulawesi Tengah,,,2.49,Cukup,,13.51,66.3,12.45,68.37,32.19,238.26794966691332,62.44,50.15,39.81
+Pemerintah Kota Palu,Kota,Sulawesi Tengah,1.06,Kurang,2.58,Cukup,1.52,7.17,81.7,5.94,82.88,28.6,398.884239888424,62.44,50.15,55.91
+Pemerintah Provinsi Sulawesi Tengah,Provinsi,Sulawesi Tengah,1.38,Kurang,2.91,Baik,1.53,13.0,69.79,11.77,71.56,404.44,3111.076923076923,62.44,50.15,55.22
+Pemerintah Kab. Bombana,Kabupaten,Sulawesi Tenggara,,,2.85,Baik,,10.76,66.25,10.54,68.15,19.73,183.364312267658,70.36,57.21,38.85
+Pemerintah Kab. Buton,Kabupaten,Sulawesi Tenggara,,,2.26,Cukup,,13.92,66.32,13.99,68.88,14.25,102.37068965517244,70.36,57.21,44.29
+Pemerintah Kab. Buton Selatan,Kabupaten,Sulawesi Tenggara,1.09,Kurang,2.25,Cukup,1.16,14.62,64.99,14.28,67.0,11.71,80.09575923392613,70.36,57.21,37.75
+Pemerintah Kab. Buton Tengah,Kabupaten,Sulawesi Tenggara,1.83,Cukup,2.63,Baik,0.8,15.8,64.55,14.4,66.47,14.73,93.22784810126582,70.36,57.21,18.4
+Pemerintah Kab. Buton Utara,Kabupaten,Sulawesi Tenggara,1.11,Kurang,2.19,Cukup,1.08,14.89,68.08,14.09,70.6,9.45,63.46541302887844,70.36,57.21,16.2
+Pemerintah Kab. Kolaka,Kabupaten,Sulawesi Tenggara,2.5,Cukup,3.68,Sangat Baik,1.18,12.43,73.56,11.67,75.18,33.45,269.1069991954948,70.36,57.21,46.51
+Pemerintah Kab. Kolaka Timur,Kabupaten,Sulawesi Tenggara,,,2.12,Cukup,,14.35,67.76,13.71,70.27,20.03,139.58188153310107,70.36,57.21,26.76
+Pemerintah Kab. Kolaka Utara,Kabupaten,Sulawesi Tenggara,1.79,Kurang,2.63,Baik,0.84,13.79,69.5,13.51,71.7,21.36,154.89485134155186,70.36,57.21,23.28
+Pemerintah Kab. Konawe,Kabupaten,Sulawesi Tenggara,,,2.92,Baik,,13.03,71.48,13.25,73.39,32.46,249.1174213353799,70.36,57.21,34.63
+Pemerintah Kab. Konawe Kepulauan,Kabupaten,Sulawesi Tenggara,,,2.16,Cukup,,17.81,65.73,15.54,67.99,5.98,33.57664233576643,70.36,57.21,39.34
+Pemerintah Kab. Konawe Selatan,Kabupaten,Sulawesi Tenggara,2.52,Cukup,3.68,Sangat Baik,1.16,11.34,68.58,11.2,71.19,36.17,318.95943562610233,70.36,57.21,49.76
+Pemerintah Kab. Konawe Utara,Kabupaten,Sulawesi Tenggara,,,2.85,Baik,,14.32,70.23,13.17,72.32,9.26,64.66480446927375,70.36,57.21,18.12
+Pemerintah Kab. Muna,Kabupaten,Sulawesi Tenggara,,,2.35,Cukup,,13.54,69.17,13.78,71.05,30.54,225.55391432791728,70.36,57.21,17.4
+Pemerintah Kab. Muna Barat,Kabupaten,Sulawesi Tenggara,,,1.82,Cukup,,13.96,65.48,13.38,68.06,11.55,82.73638968481376,70.36,57.21,20.06
+Pemerintah Kab. Wakatobi,Kabupaten,Sulawesi Tenggara,,,2.55,Cukup,,14.91,69.87,14.36,72.02,15.3,102.61569416498992,70.36,57.21,21.68
+Pemerintah Kota Baubau,Kota,Sulawesi Tenggara,1.0,Kurang,3.09,Baik,2.09,7.78,76.26,7.4,78.13,13.3,170.95115681233932,70.36,57.21,44.16
+Pemerintah Kota Kendari,Kota,Sulawesi Tenggara,1.79,Kurang,3.23,Baik,1.44,4.87,84.15,4.23,85.33,19.46,399.5893223819302,70.36,57.21,55.62
+Pemerintah Provinsi Sulawesi Tenggara,Provinsi,Sulawesi Tenggara,1.05,Kurang,2.87,Baik,1.82,11.66,71.66,11.21,73.48,318.7,2733.27615780446,70.36,57.21,
+Pemerintah Kab. Bolaang Mongondow,Kabupaten,Sulawesi Utara,2.03,Cukup,2.73,Baik,0.7,7.58,68.16,7.74,70.29,19.08,251.7150395778364,68.44,59.73,34.56
+Pemerintah Kab. Bolaang Mongondow Selatan,Kabupaten,Sulawesi Utara,1.83,Cukup,2.66,Baik,0.83,12.85,65.42,11.33,67.14,8.63,67.15953307392996,68.44,59.73,47.91
+Pemerintah Kab. Bolaang Mongondow Timur,Kabupaten,Sulawesi Utara,,,2.88,Baik,,6.1,66.55,5.87,68.53,4.47,73.27868852459017,68.44,59.73,42.62
+Pemerintah Kab. Bolaang Mongondow Utara,Kabupaten,Sulawesi Utara,2.02,Cukup,2.34,Cukup,0.32,8.03,67.39,7.88,69.32,6.53,81.3200498132005,68.44,59.73,60.0
+Pemerintah Kab. Kepulauan Sangihe,Kabupaten,Sulawesi Utara,1.56,Kurang,2.46,Cukup,0.9,11.02,71.07,10.84,72.71,14.55,132.03266787658805,68.44,59.73,26.68
+Pemerintah Kab. Kepulauan Talaud,Kabupaten,Sulawesi Utara,1.5,Kurang,2.39,Cukup,0.89,9.0,69.83,8.17,71.77,8.37,93.0,68.44,59.73,3.6
+Pemerintah Kab. Minahasa,Kabupaten,Sulawesi Utara,1.99,Cukup,2.23,Cukup,0.24,7.67,75.73,6.53,77.74,26.3,342.89439374185133,68.44,59.73,13.0
+Pemerintah Kab. Minahasa Selatan,Kabupaten,Sulawesi Utara,,,2.48,Cukup,,9.37,72.32,8.97,74.17,19.77,210.99252934898607,68.44,59.73,6.1
+Pemerintah Kab. Minahasa Tenggara,Kabupaten,Sulawesi Utara,2.46,Cukup,3.02,Baik,0.56,12.47,71.06,11.72,72.66,13.31,106.73616680032076,68.44,59.73,
+Pemerintah Kab. Minahasa Utara,Kabupaten,Sulawesi Utara,1.42,Kurang,3.37,Baik,1.95,7.11,74.11,6.95,75.89,14.49,203.7974683544304,68.44,59.73,48.65
+Pemerintah Kab. Siau Tagulandang Biaro,Kabupaten,Sulawesi Utara,,,2.46,Cukup,,8.94,68.05,8.32,70.31,6.0,67.11409395973155,68.44,59.73,
+Pemerintah Kota Bitung,Kota,Sulawesi Utara,2.11,Cukup,3.31,Baik,1.2,6.43,74.2,6.27,75.71,14.33,222.8615863141524,68.44,59.73,51.76
+Pemerintah Kota KotaMobagu,Kota,Sulawesi Utara,2.41,Cukup,2.93,Baik,0.52,5.74,73.47,5.12,75.27,7.56,131.7073170731707,68.44,59.73,54.46
+Pemerintah Kota Manado,Kota,Sulawesi Utara,1.84,Cukup,3.93,Sangat Baik,2.09,6.19,79.2,5.43,80.63,26.78,432.63327948303714,68.44,59.73,54.71
+Pemerintah Kota Tomohon,Kota,Sulawesi Utara,1.67,Kurang,3.03,Baik,1.36,5.69,76.86,5.38,78.89,6.18,108.61159929701228,68.44,59.73,37.22
+Pemerintah Provinsi Sulawesi Utara,Provinsi,Sulawesi Utara,2.26,Cukup,3.01,Baik,0.75,7.77,73.3,7.25,75.03,196.35,2527.027027027027,68.44,59.73,37.51
+Pemerintah Kab. Agam,Kabupaten,Sumatera Barat,2.31,Cukup,2.56,Cukup,0.25,6.85,72.57,6.83,74.66,34.26,500.1459854014599,74.59,58.14,50.22
+Pemerintah Kab. Dharmasraya,Kabupaten,Sumatera Barat,1.09,Kurang,3.61,Sangat Baik,2.52,6.67,71.76,5.32,74.06,17.6,263.86806596701655,74.59,58.14,63.12
+Pemerintah Kab. Kep. Mentawai,Kabupaten,Sumatera Barat,,,2.46,Cukup,,14.84,61.35,13.89,63.99,14.31,96.42857142857144,74.59,58.14,37.04
+Pemerintah Kab. Limapuluh Kota,Kabupaten,Sumatera Barat,2.68,Baik,2.7,Baik,0.02,7.29,69.68,6.92,71.14,28.51,391.08367626886144,74.59,58.14,45.72
+Pemerintah Kab. Padang Pariaman,Kabupaten,Sumatera Barat,2.6,Baik,3.51,Sangat Baik,0.91,7.22,70.76,6.27,73.1,30.41,421.191135734072,74.59,58.14,85.73
+Pemerintah Kab. Pasaman,Kabupaten,Sumatera Barat,1.36,Kurang,2.67,Baik,1.31,7.48,66.77,6.74,68.89,21.57,288.36898395721926,74.59,58.14,59.35
+Pemerintah Kab. Pasaman Barat,Kabupaten,Sumatera Barat,2.18,Cukup,3.66,Sangat Baik,1.48,7.51,68.76,7.0,70.93,34.97,465.6458055925432,74.59,58.14,60.36
+Pemerintah Kab. Pesisir Selatan,Kabupaten,Sumatera Barat,3.34,Baik,4.23,Memuaskan,0.89,7.92,70.03,7.49,72.02,37.41,472.3484848484849,74.59,58.14,59.26
+Pemerintah Kab. Sijunjung,Kabupaten,Sumatera Barat,1.88,Cukup,3.0,Baik,1.12,6.8,67.86,5.78,70.23,16.81,247.2058823529412,74.59,58.14,58.96
+Pemerintah Kab. Solok,Kabupaten,Sumatera Barat,2.82,Baik,3.49,Baik,0.67,8.01,69.24,7.31,71.02,30.36,379.0262172284644,74.59,58.14,
+Pemerintah Kab. Solok Selatan,Kabupaten,Sumatera Barat,1.21,Kurang,3.28,Baik,2.07,7.52,69.23,6.56,71.5,13.41,178.32446808510642,74.59,58.14,53.81
+Pemerintah Kab. Tanah Datar,Kabupaten,Sumatera Barat,2.18,Cukup,2.81,Baik,0.63,4.54,72.46,4.28,74.9,15.89,350.0,74.59,58.14,45.95
+Pemerintah Kota Bukittinggi,Kota,Sumatera Barat,2.26,Cukup,2.49,Cukup,0.23,5.14,80.7,4.08,82.51,6.98,135.79766536964982,74.59,58.14,48.99
+Pemerintah Kota Padang,Kota,Sumatera Barat,2.47,Cukup,3.96,Sangat Baik,1.49,4.94,82.9,4.06,83.99,48.44,980.566801619433,74.59,58.14,63.72
+Pemerintah Kota Padang Panjang,Kota,Sumatera Barat,2.09,Cukup,3.16,Baik,1.07,5.92,77.97,5.31,80.17,3.28,55.4054054054054,74.59,58.14,
+Pemerintah Kota Pariaman,Kota,Sumatera Barat,2.42,Cukup,3.44,Baik,1.02,4.38,77.07,4.26,78.88,3.99,91.09589041095892,74.59,58.14,61.28
+Pemerintah Kota Payakumbuh,Kota,Sumatera Barat,2.42,Cukup,3.75,Sangat Baik,1.33,6.16,79.08,5.19,80.61,8.66,140.58441558441558,74.59,58.14,54.62
+Pemerintah Kota Sawahlunto,Kota,Sumatera Barat,2.07,Cukup,3.41,Baik,1.34,2.38,72.88,2.33,75.13,1.52,63.8655462184874,74.59,58.14,72.87
+Pemerintah Kota Solok,Kota,Sumatera Barat,2.34,Cukup,3.75,Sangat Baik,1.41,3.12,78.41,3.07,80.0,2.31,74.03846153846153,74.59,58.14,63.3
+Pemerintah Provinsi Sumatera Barat,Provinsi,Sumatera Barat,2.69,Baik,3.85,Sangat Baik,1.16,6.63,72.65,5.97,74.49,370.67,5590.79939668175,74.59,58.14,88.92
+Pemerintah Kab. Banyuasin,Kabupaten,Sumatera Selatan,2.0,Cukup,2.71,Baik,0.71,10.75,67.13,9.31,69.51,94.08,875.1627906976744,70.54,56.89,55.79
+Pemerintah Kab. Empat Lawang,Kabupaten,Sumatera Selatan,2.23,Cukup,2.34,Cukup,0.11,13.35,65.39,10.78,67.25,34.11,255.5056179775281,70.54,56.89,53.64
+Pemerintah Kab. Lahat,Kabupaten,Sumatera Selatan,2.03,Cukup,2.33,Cukup,0.3,16.46,67.58,14.14,69.77,68.4,415.55285540704745,70.54,56.89,32.95
+Pemerintah Kab. Muara Enim,Kabupaten,Sumatera Selatan,2.73,Baik,3.29,Baik,0.56,12.32,68.86,9.79,71.0,80.4,652.5974025974026,70.54,56.89,64.31
+Pemerintah Kab. Musi Banyuasin,Kabupaten,Sumatera Selatan,2.82,Baik,3.62,Sangat Baik,0.8,15.84,68.1,12.88,70.12,105.23,664.3308080808082,70.54,56.89,
+Pemerintah Kab. Musi Rawas,Kabupaten,Sumatera Selatan,2.0,Cukup,3.09,Baik,1.09,13.89,67.01,13.44,68.95,57.46,413.678905687545,70.54,56.89,41.58
+Pemerintah Kab. Musi Rawas Utara,Kabupaten,Sumatera Selatan,1.09,Kurang,2.38,Cukup,1.29,20.11,64.93,17.38,67.4,39.5,196.4196916956738,70.54,56.89,35.63
+Pemerintah Kab. Ogan Ilir,Kabupaten,Sumatera Selatan,1.29,Kurang,2.94,Baik,1.65,13.82,67.17,12.3,69.4,60.5,437.7713458755428,70.54,56.89,79.45
+Pemerintah Kab. Ogan Komering Ilir,Kabupaten,Sumatera Selatan,2.49,Cukup,3.55,Sangat Baik,1.06,14.68,67.17,12.08,69.33,124.78,850.0000000000001,70.54,56.89,58.67
+Pemerintah Kab. Ogan Komering Ulu,Kabupaten,Sumatera Selatan,2.39,Cukup,2.62,Baik,0.23,12.62,69.6,10.68,71.55,47.5,376.3866877971474,70.54,56.89,59.67
+Pemerintah Kab. Ogan Komering Ulu Sel.,Kabupaten,Sumatera Selatan,2.19,Cukup,2.4,Cukup,0.21,11.12,65.34,9.86,67.65,41.23,370.773381294964,70.54,56.89,46.41
+Pemerintah Kab. Ogan Komering Ulu Timur,Kabupaten,Sumatera Selatan,,,2.61,Baik,,10.6,69.58,9.75,71.55,72.89,687.6415094339623,70.54,56.89,56.48
+Pemerintah Kab. Penukal Abab Lematang Ilir,Kabupaten,Sumatera Selatan,1.99,Cukup,2.66,Baik,0.67,12.91,64.88,9.82,67.48,25.1,194.4229279628196,70.54,56.89,67.41
+Pemerintah Kota Lubuk Linggau,Kota,Sumatera Selatan,1.71,Kurang,2.64,Baik,0.93,13.23,74.89,11.14,76.82,31.61,238.92668178382465,70.54,56.89,
+Pemerintah Kota Pagar Alam,Kota,Sumatera Selatan,1.06,Kurang,2.54,Cukup,1.48,9.4,68.68,8.18,71.19,13.27,141.17021276595744,70.54,56.89,44.08
+Pemerintah Kota Palembang,Kota,Sumatera Selatan,2.66,Baik,3.51,Sangat Baik,0.85,11.34,78.72,9.77,80.57,194.12,1711.8165784832452,70.54,56.89,84.28
+Pemerintah Kota Prabumulih,Kota,Sumatera Selatan,2.56,Cukup,3.37,Baik,0.81,12.2,74.67,10.13,77.08,23.6,193.4426229508197,70.54,56.89,10.2
+Pemerintah Provinsi Sumatera Selatan,Provinsi,Sumatera Selatan,2.62,Baik,3.0,Baik,0.38,12.84,70.24,10.97,72.3,1113.76,8674.143302180686,70.54,56.89,75.79
+Pemerintah Kab. Asahan,Kabupaten,Sumatera Utara,1.71,Kurang,2.86,Baik,1.15,9.35,70.49,8.12,72.09,69.29,741.0695187165776,74.15,59.17,48.64
+Pemerintah Kab. Batubara,Kabupaten,Sumatera Utara,1.96,Cukup,2.67,Baik,0.71,12.38,68.58,10.94,70.83,52.59,424.7980613893377,74.15,59.17,47.01
+Pemerintah Kab. Dairi,Kabupaten,Sumatera Utara,2.07,Cukup,2.69,Baik,0.62,8.31,71.84,7.1,73.92,23.72,285.4392298435619,74.15,59.17,43.98
+Pemerintah Kab. Deli Serdang,Kabupaten,Sumatera Utara,2.39,Cukup,3.57,Sangat Baik,1.18,4.01,75.53,3.44,76.92,92.52,2307.231920199501,74.15,59.17,60.65
+Pemerintah Kab. Humbang Hasundutan,Kabupaten,Sumatera Utara,1.5,Kurang,2.8,Baik,1.3,9.65,69.41,8.44,71.59,18.71,193.8860103626943,74.15,59.17,56.79
+Pemerintah Kab. Karo,Kabupaten,Sumatera Utara,2.06,Cukup,3.04,Baik,0.98,8.79,74.83,7.37,76.55,38.01,432.4232081911263,74.15,59.17,62.02
+Pemerintah Kab. Labuhanbatu Selatan,Kabupaten,Sumatera Utara,1.86,Cukup,1.93,Cukup,0.07,8.53,71.69,7.73,73.67,30.36,355.92028135990626,74.15,59.17,18.02
+Pemerintah Kab. Labuhanbatu Utara,Kabupaten,Sumatera Utara,2.47,Cukup,2.78,Baik,0.31,10.02,71.87,8.98,74.4,37.13,370.558882235529,74.15,59.17,45.61
+Pemerintah Kab. Langkat,Kabupaten,Sumatera Utara,2.36,Cukup,3.66,Sangat Baik,1.3,10.12,71.35,9.04,72.73,106.59,1053.2608695652175,74.15,59.17,16.96
+Pemerintah Kab. Mandailing Natal,Kabupaten,Sumatera Utara,2.73,Baik,2.89,Baik,0.16,9.49,67.19,8.69,69.33,43.24,455.6375131717598,74.15,59.17,52.65
+Pemerintah Kab. Nias,Kabupaten,Sumatera Utara,,,3.72,Sangat Baik,,16.82,62.74,14.89,65.55,24.33,144.6492271105826,74.15,59.17,41.91
+Pemerintah Kab. Nias Barat,Kabupaten,Sumatera Utara,,,1.8,Kurang,,26.42,61.99,22.68,64.67,21.75,82.32399697199092,74.15,59.17,41.9
+Pemerintah Kab. Nias Selatan,Kabupaten,Sumatera Utara,,,2.9,Baik,,16.92,62.35,16.32,65.02,55.16,326.00472813238764,74.15,59.17,35.01
+Pemerintah Kab. Nias Utara,Kabupaten,Sumatera Utara,,,2.41,Cukup,,25.66,62.82,21.5,65.62,35.84,139.6726422447389,74.15,59.17,55.14
+Pemerintah Kab. Padang Lawas,Kabupaten,Sumatera Utara,,,2.17,Cukup,,8.69,68.64,7.87,71.27,25.78,296.66283084004607,74.15,59.17,20.98
+Pemerintah Kab. Padang Lawas Utara,Kabupaten,Sumatera Utara,1.39,Kurang,2.26,Cukup,0.87,9.92,70.11,8.97,72.32,28.37,285.98790322580646,74.15,59.17,38.62
+Pemerintah Kab. Pakpak Bharat,Kabupaten,Sumatera Utara,2.69,Baik,2.66,Baik,-0.03,9.35,67.94,6.87,70.36,4.79,51.229946524064175,74.15,59.17,44.01
+Pemerintah Kab. Samosir,Kabupaten,Sumatera Utara,3.16,Baik,2.7,Baik,-0.46,12.68,70.83,11.63,72.88,16.08,126.81388012618297,74.15,59.17,45.04
+Pemerintah Kab. Serdang Bedagai,Kabupaten,Sumatera Utara,2.28,Cukup,2.65,Baik,0.37,8.3,70.56,6.97,72.47,51.16,616.3855421686746,74.15,59.17,45.26
+Pemerintah Kab. Simalungun,Kabupaten,Sumatera Utara,,,2.37,Cukup,,8.81,73.4,7.72,74.97,76.99,873.893303064699,74.15,59.17,41.49
+Pemerintah Kab. Tapanuli Selatan,Kabupaten,Sumatera Utara,2.87,Baik,3.14,Baik,0.27,8.8,70.33,6.92,72.14,25.01,284.20454545454544,74.15,59.17,44.69
+Pemerintah Kab. Tapanuli Tengah,Kabupaten,Sumatera Utara,1.52,Kurang,2.38,Cukup,0.86,12.67,69.61,11.8,71.52,49.95,394.2383583267561,74.15,59.17,22.62
+Pemerintah Kab. Tapanuli Utara,Kabupaten,Sumatera Utara,2.12,Cukup,2.85,Baik,0.73,9.72,73.76,8.21,75.23,29.72,305.7613168724279,74.15,59.17,34.41
+Pemerintah Kab. Toba,Kabupaten,Sumatera Utara,1.69,Kurang,2.95,Baik,1.26,8.99,,8.07,,16.61,184.7608453837597,74.15,59.17,39.74
+Pemerintah Kota Binjai,Kota,Sumatera Utara,1.67,Kurang,3.12,Baik,1.45,5.81,76.01,4.75,78.1,16.46,283.30464716006884,74.15,59.17,37.93
+Pemerintah Kota Gunung Sitoli,Kota,Sumatera Utara,2.03,Cukup,2.33,Cukup,0.3,16.45,69.61,14.72,71.41,24.02,146.0182370820669,74.15,59.17,44.24
+Pemerintah Kota Medan,Kota,Sumatera Utara,2.76,Baik,3.67,Sangat Baik,0.91,8.34,81.21,7.94,82.76,193.03,2314.508393285372,74.15,59.17,45.99
+Pemerintah Kota Padangsidimpuan,Kota,Sumatera Utara,2.06,Cukup,2.66,Baik,0.6,7.53,75.48,6.23,76.96,17.28,229.4820717131474,74.15,59.17,41.13
+Pemerintah Kota Pematang Siantar,Kota,Sumatera Utara,1.53,Kurang,3.06,Baik,1.53,8.52,79.17,7.2,81.17,22.06,258.9201877934272,74.15,59.17,51.67
+Pemerintah Kota Sibolga,Kota,Sumatera Utara,1.0,Kurang,2.41,Cukup,1.41,12.33,73.94,11.39,75.66,10.8,87.5912408759124,74.15,59.17,38.64
+Pemerintah Kota Tanjung Balai,Kota,Sumatera Utara,2.85,Baik,3.24,Baik,0.39,13.4,68.94,11.97,71.1,24.1,179.8507462686567,74.15,59.17,34.28
+Pemerintah Kota Tebing Tinggi,Kota,Sumatera Utara,2.48,Cukup,3.79,Sangat Baik,1.31,10.3,75.42,8.79,77.45,17.37,168.64077669902912,74.15,59.17,16.44
+Pemerintah Provinsi Sumatera Utara,Provinsi,Sumatera Utara,2.77,Baik,3.86,Sangat Baik,1.09,9.01,72.0,7.99,74.02,1343.86,14915.205327413983,74.15,59.17,59.93

@@ -1,0 +1,26 @@
+SPBE regencies and cities scored in 2021 and 2024
+n = 373 (descriptives), n = 370 (regressions)
+Mean score: 2021 2.20, 2024 3.23
+Share that improved: 99%
+Coefficient of variation: 2021 0.26, 2024 0.20
+Java minus outside Java (raw means): 2021 0.67, 2024 0.86
+
+== Change 2021-2024, SE clustered by province  n=370  R2=0.368
+  const             -0.170  se  0.609  t  -0.28
+  spbe_2021         -0.662  se  0.044  t -14.90  *
+  hdi_2021           0.022  se  0.009  t   2.52  *
+  poverty_2021      -0.011  se  0.006  t  -1.89
+  log_pop            0.096  se  0.028  t   3.40  *
+  kota              -0.027  se  0.104  t  -0.26
+  java               0.423  se  0.105  t   4.01  *
+  internet_2021      0.009  se  0.004  t   2.34  *
+
+== Level 2024, SE clustered by province  n=370  R2=0.542
+  const             -0.521  se  0.733  t  -0.71
+  hdi_2024           0.030  se  0.009  t   3.18  *
+  poverty_2024      -0.015  se  0.007  t  -2.15  *
+  log_pop            0.131  se  0.031  t   4.17  *
+  kota              -0.049  se  0.112  t  -0.44
+  java               0.614  se  0.102  t   6.02  *
+  internet_2024      0.011  se  0.005  t   1.95
+
